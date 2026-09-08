@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Alerts — EpiAlert{% endblock %}
+{% block body %}
+<h1>Alerts</h1>
+<p class="sub">SMS-eligible alerts, generated from confirmation-mode detection results.</p>
+
+<div class="panel">
+  <form class="filters" method="get" action="/alerts">
+    <div>
+      <label for="status_filter">Status</label>
+      <select id="status_filter" name="status_filter">
+        <option value="">All</option>
+        {% for s in ['ALERT','HIGH_ALERT'] %}
+        <option value="{{ s }}" {% if selected_status == s %}selected{% endif %}>{{ s }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <button type="submit">Apply</button>
+  </form>
+</div>
+
+<div class="panel">
+  <h2>{{ rows|length }} alert(s)</h2>
+  {% if rows %}
+  <div class="scroll">
+  <table>
+    <thead><tr><th>ID</th><th>Week</th><th>Disease</th><th>Village</th><th>Street</th>
+      <th>Status</th><th>Observed</th><th>Expected</th><th></th></tr></thead>
+    <tbody>
+      {% for a in rows %}
+      <tr>
+        <td>{{ a.alert_id }}</td>
+        <td>{{ a.week_number }}</td>
+        <td>{{ a.disease }}</td>
+        <td>{{ a.village }}</td>
+        <td>{{ a.street }}</td>
+        <td><span class="tag {{ a.status }}">{{ a.status }}</span></td>
+        <td>{{ a.observed_count }}</td>
+        <td>{{ "%.2f"|format(a.expected_count or 0) }}</td>
+        <td><a class="link" href="/alerts/{{ a.alert_id }}">View</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <p class="empty">No alerts match. Run <code>python -m src.cli alerts</code> to generate them.</p>
+  {% endif %}
+</div>
+{% endblock %}

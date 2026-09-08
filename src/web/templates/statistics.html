@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Statistics — EpiAlert{% endblock %}
+{% block body %}
+<h1>Statistics</h1>
+<p class="sub">Detection outcomes across all evaluated unit-weeks.</p>
+
+<div class="cards">
+  <div class="card"><div class="n">{{ "{:,}".format(counts.detection_results) }}</div><div class="k">Unit-weeks evaluated</div></div>
+  <div class="card"><div class="n">{{ counts.spatial_units }}</div><div class="k">Spatial units</div></div>
+  <div class="card"><div class="n">{{ "{:,}".format(counts.alerts) }}</div><div class="k">Alerts raised</div></div>
+  <div class="card"><div class="n">{{ counts.alerts_high }}</div><div class="k">High alerts</div></div>
+</div>
+
+<div class="panel">
+  <h2>Status distribution by fusion mode</h2>
+  <p class="muted" style="font-size:13px;">
+    Union fires when any two of four signals agree. Confirmation requires both
+    CUSUM and EWMA, which is stricter and alerts far less often.
+  </p>
+  {% if breakdown %}
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Fusion mode</th><th>Status</th><th>Unit-weeks</th></tr></thead>
+    <tbody>
+      {% for r in breakdown %}
+      <tr>
+        <td>{{ r.fusion_mode }}</td>
+        <td><span class="tag {{ r.status }}">{{ r.status }}</span></td>
+        <td>{{ "{:,}".format(r.n) }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <p class="empty">No detection results yet.</p>
+  {% endif %}
+</div>
+{% endblock %}

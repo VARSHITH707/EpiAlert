@@ -1,0 +1,349 @@
+{
+  "outbreaks": [
+    {
+      "event_id": "E001",
+      "village": "Village A",
+      "disease": "Dengue",
+      "start_week": 27,
+      "end_week": 33,
+      "affected_streets": [
+        "Street 4"
+      ],
+      "event_type": "gradual_outbreak"
+    },
+    {
+      "event_id": "E002",
+      "village": "Village B",
+      "disease": "Malaria",
+      "start_week": 40,
+      "end_week": 47,
+      "affected_streets": [
+        "Street 3",
+        "Street 4",
+        "Street 5"
+      ],
+      "event_type": "multi_street_spread"
+    },
+    {
+      "event_id": "E003",
+      "village": "Village C",
+      "disease": "Influenza/ARI",
+      "start_week": 58,
+      "end_week": 66,
+      "affected_streets": [
+        "Street 1",
+        "Street 10",
+        "Street 2",
+        "Street 3",
+        "Street 4",
+        "Street 5",
+        "Street 6",
+        "Street 7",
+        "Street 8",
+        "Street 9"
+      ],
+      "event_type": "village_wide_increase"
+    },
+    {
+      "event_id": "E004",
+      "village": "Village A",
+      "disease": "Chikungunya",
+      "start_week": 72,
+      "end_week": 75,
+      "affected_streets": [
+        "Street 2",
+        "Street 3"
+      ],
+      "event_type": "temporary_spike"
+    },
+    {
+      "event_id": "E005",
+      "village": "Village B",
+      "disease": "Acute Gastroenteritis",
+      "start_week": 82,
+      "end_week": 89,
+      "affected_streets": [
+        "Street 6"
+      ],
+      "event_type": "sustained_increase"
+    },
+    {
+      "event_id": "E006",
+      "village": "Village C",
+      "disease": "Dengue",
+      "start_week": 93,
+      "end_week": 96,
+      "affected_streets": [
+        "Street 7",
+        "Street 8"
+      ],
+      "event_type": "sudden_outbreak"
+    }
+  ],
+  "total_outbreak_unit_weeks": 145,
+  "total_evaluation_unit_weeks": 10790,
+  "fusion_mode": "confirmation",
+  "metrics": {
+    "combined_status": {
+      "TP": 38,
+      "FP": 280,
+      "FN": 107,
+      "TN": 10365,
+      "sensitivity": 0.2620689655172414,
+      "specificity": 0.973696571160169,
+      "PPV": 0.11949685534591195,
+      "F1": 0.16414686825053995
+    },
+    "cusum_signal": {
+      "TP": 44,
+      "FP": 779,
+      "FN": 101,
+      "TN": 9866,
+      "sensitivity": 0.30344827586206896,
+      "specificity": 0.9268201033348991,
+      "PPV": 0.053462940461725394,
+      "F1": 0.09090909090909091
+    },
+    "ewma_signal": {
+      "TP": 38,
+      "FP": 289,
+      "FN": 107,
+      "TN": 10356,
+      "sensitivity": 0.2620689655172414,
+      "specificity": 0.972851103804603,
+      "PPV": 0.1162079510703364,
+      "F1": 0.16101694915254236
+    },
+    "trend_sustained": {
+      "TP": 2,
+      "FP": 3,
+      "FN": 143,
+      "TN": 10642,
+      "sensitivity": 0.013793103448275862,
+      "specificity": 0.9997181775481446,
+      "PPV": 0.4,
+      "F1": 0.02666666666666667
+    },
+    "baseline_deviation": {
+      "TP": 57,
+      "FP": 1149,
+      "FN": 88,
+      "TN": 9496,
+      "sensitivity": 0.3931034482758621,
+      "specificity": 0.8920620009394081,
+      "PPV": 0.0472636815920398,
+      "F1": 0.0843819393042191
+    }
+  },
+  "timeliness": [
+    {
+      "event_id": "E001",
+      "disease": "Dengue",
+      "village": "Village A",
+      "true_start": 27,
+      "first_detected": 27,
+      "lead_time_weeks": 0,
+      "unit": "Village A/Street 4"
+    },
+    {
+      "event_id": "E002",
+      "disease": "Malaria",
+      "village": "Village B",
+      "true_start": 40,
+      "first_detected": 40,
+      "lead_time_weeks": 0,
+      "unit": "Village B/Street 4"
+    },
+    {
+      "event_id": "E003",
+      "disease": "Influenza/ARI",
+      "village": "Village C",
+      "true_start": 58,
+      "first_detected": 59,
+      "lead_time_weeks": 1,
+      "unit": "Village C/Street 2"
+    },
+    {
+      "event_id": "E004",
+      "disease": "Chikungunya",
+      "village": "Village A",
+      "true_start": 72,
+      "first_detected": 72,
+      "lead_time_weeks": 0,
+      "unit": "Village A/Street 2"
+    },
+    {
+      "event_id": "E005",
+      "disease": "Acute Gastroenteritis",
+      "village": "Village B",
+      "true_start": 82,
+      "first_detected": 82,
+      "lead_time_weeks": 0,
+      "unit": "Village B/Street 6"
+    },
+    {
+      "event_id": "E006",
+      "disease": "Dengue",
+      "village": "Village C",
+      "true_start": 93,
+      "first_detected": 93,
+      "lead_time_weeks": 0,
+      "unit": "Village C/Street 8"
+    }
+  ],
+  "by_outbreak": {
+    "E001": {
+      "outbreak": {
+        "event_id": "E001",
+        "village": "Village A",
+        "disease": "Dengue",
+        "start_week": 27,
+        "end_week": 33,
+        "affected_streets": [
+          "Street 4"
+        ],
+        "event_type": "gradual_outbreak"
+      },
+      "TP": 6,
+      "FP": 66,
+      "FN": 1,
+      "TN": 480,
+      "sensitivity": 0.8571428571428571,
+      "first_alert_week": 27,
+      "true_start_week": 27,
+      "lead_time_weeks": 0,
+      "units_affected": 1,
+      "unit_weeks": 7
+    },
+    "E002": {
+      "outbreak": {
+        "event_id": "E002",
+        "village": "Village B",
+        "disease": "Malaria",
+        "start_week": 40,
+        "end_week": 47,
+        "affected_streets": [
+          "Street 3",
+          "Street 4",
+          "Street 5"
+        ],
+        "event_type": "multi_street_spread"
+      },
+      "TP": 12,
+      "FP": 126,
+      "FN": 12,
+      "TN": 606,
+      "sensitivity": 0.5,
+      "first_alert_week": 40,
+      "true_start_week": 40,
+      "lead_time_weeks": 0,
+      "units_affected": 3,
+      "unit_weeks": 24
+    },
+    "E003": {
+      "outbreak": {
+        "event_id": "E003",
+        "village": "Village C",
+        "disease": "Influenza/ARI",
+        "start_week": 58,
+        "end_week": 66,
+        "affected_streets": [
+          "Street 1",
+          "Street 10",
+          "Street 2",
+          "Street 3",
+          "Street 4",
+          "Street 5",
+          "Street 6",
+          "Street 7",
+          "Street 8",
+          "Street 9"
+        ],
+        "event_type": "village_wide_increase"
+      },
+      "TP": 44,
+      "FP": 112,
+      "FN": 46,
+      "TN": 638,
+      "sensitivity": 0.4888888888888889,
+      "first_alert_week": 59,
+      "true_start_week": 58,
+      "lead_time_weeks": 1,
+      "units_affected": 10,
+      "unit_weeks": 90
+    },
+    "E004": {
+      "outbreak": {
+        "event_id": "E004",
+        "village": "Village A",
+        "disease": "Chikungunya",
+        "start_week": 72,
+        "end_week": 75,
+        "affected_streets": [
+          "Street 2",
+          "Street 3"
+        ],
+        "event_type": "temporary_spike"
+      },
+      "TP": 3,
+      "FP": 95,
+      "FN": 5,
+      "TN": 485,
+      "sensitivity": 0.375,
+      "first_alert_week": 72,
+      "true_start_week": 72,
+      "lead_time_weeks": 0,
+      "units_affected": 2,
+      "unit_weeks": 8
+    },
+    "E005": {
+      "outbreak": {
+        "event_id": "E005",
+        "village": "Village B",
+        "disease": "Acute Gastroenteritis",
+        "start_week": 82,
+        "end_week": 89,
+        "affected_streets": [
+          "Street 6"
+        ],
+        "event_type": "sustained_increase"
+      },
+      "TP": 6,
+      "FP": 86,
+      "FN": 2,
+      "TN": 662,
+      "sensitivity": 0.75,
+      "first_alert_week": 82,
+      "true_start_week": 82,
+      "lead_time_weeks": 0,
+      "units_affected": 1,
+      "unit_weeks": 8
+    },
+    "E006": {
+      "outbreak": {
+        "event_id": "E006",
+        "village": "Village C",
+        "disease": "Dengue",
+        "start_week": 93,
+        "end_week": 96,
+        "affected_streets": [
+          "Street 7",
+          "Street 8"
+        ],
+        "event_type": "sudden_outbreak"
+      },
+      "TP": 6,
+      "FP": 150,
+      "FN": 2,
+      "TN": 632,
+      "sensitivity": 0.75,
+      "first_alert_week": 93,
+      "true_start_week": 93,
+      "lead_time_weeks": 0,
+      "units_affected": 2,
+      "unit_weeks": 8
+    }
+  },
+  "over_escalation": 280,
+  "under_escalation": 107
+}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}SMS — EpiAlert{% endblock %}
+{% block body %}
+<h1>SMS audit</h1>
+<p class="sub">Every dispatch attempt is recorded, whether or not a message was actually sent.</p>
+
+<div class="cards">
+  <div class="card"><div class="n">{{ summary.total }}</div><div class="k">Messages</div></div>
+  <div class="card"><div class="n">{{ summary.alerts_covered }}</div><div class="k">Alerts covered</div></div>
+  <div class="card"><div class="n">{{ summary.distinct_phones }}</div><div class="k">Distinct numbers</div></div>
+  <div class="card"><div class="n">{{ summary.max_per_alert }}</div><div class="k">Max per alert</div></div>
+</div>
+
+<div class="note">
+  <strong>Deduplication.</strong> The {{ "{:,}".format(summary.people_total) }} people in the
+  dataset share only {{ summary.distinct_phones }} distinct phone numbers. An alert covering a
+  whole street therefore sends at most {{ summary.max_per_alert }} messages, not one per
+  resident. Re-running dispatch sends nothing further, because each
+  (alert, phone) pair is recorded once.
+</div>
+
+<div class="panel">
+  <h2>Audit rows ({{ rows|length }} shown)</h2>
+  {% if rows %}
+  <div class="scroll">
+  <table>
+    <thead><tr><th>ID</th><th>Alert</th><th>Disease</th><th>Village</th><th>Street</th>
+      <th>Phone</th><th>Status</th><th>Provider</th><th>Sent at</th></tr></thead>
+    <tbody>
+      {% for r in rows %}
+      <tr>
+        <td>{{ r.sms_id }}</td>
+        <td><a class="link" href="/alerts/{{ r.alert_id }}">{{ r.alert_id }}</a></td>
+        <td>{{ r.disease }}</td>
+        <td>{{ r.village }}</td>
+        <td>{{ r.street }}</td>
+        <td>{{ r.phone_number }}</td>
+        <td class="{{ r.delivery_status }}">{{ r.delivery_status }}</td>
+        <td>{{ r.provider }}</td>
+        <td>{{ r.sent_at }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <p class="empty">No SMS yet. Run <code>python -m src.cli sms</code>.</p>
+  {% endif %}
+</div>
+{% endblock %}

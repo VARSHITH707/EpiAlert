@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}EpiAlert{% endblock %}</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --panel: #ffffff; --ink: #1b1f24; --muted: #626c76;
+    --line: #dfe3e8; --accent: #1f5f8b;
+    --normal: #4c8c4a; --watch: #b8860b; --alert: #c25e00; --high: #b3261e;
+    --provisional: #5c6b7a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.5 system-ui, -apple-system, Segoe UI, sans-serif;
+         background: var(--bg); color: var(--ink); }
+  header { background: var(--accent); color: #fff; padding: 0 20px; }
+  .bar { display: flex; align-items: center; gap: 22px; max-width: 1200px;
+         margin: 0 auto; height: 52px; }
+  .brand { font-weight: 700; letter-spacing: .3px; }
+  nav { display: flex; gap: 16px; flex: 1; flex-wrap: wrap; }
+  nav a { color: #dceaf5; text-decoration: none; font-size: 14px; }
+  nav a:hover, nav a.on { color: #fff; text-decoration: underline; }
+  .who { font-size: 13px; color: #cfe2f0; }
+  main { max-width: 1200px; margin: 22px auto; padding: 0 20px; }
+  h1 { font-size: 21px; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+  .panel { background: var(--panel); border: 1px solid var(--line);
+           border-radius: 8px; padding: 16px; margin-bottom: 18px; }
+  .panel h2 { font-size: 15px; margin: 0 0 12px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+           gap: 12px; margin-bottom: 18px; }
+  .card { background: var(--panel); border: 1px solid var(--line);
+          border-radius: 8px; padding: 14px; }
+  .card .n { font-size: 24px; font-weight: 600; }
+  .card .k { color: var(--muted); font-size: 12px; text-transform: uppercase;
+             letter-spacing: .4px; margin-top: 2px; }
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line);
+           white-space: nowrap; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px;
+       text-transform: uppercase; letter-spacing: .4px; }
+  tbody tr:hover { background: #fafbfc; }
+  .tag { display: inline-block; padding: 1px 8px; border-radius: 10px;
+         font-size: 11.5px; font-weight: 600; color: #fff; }
+  .NORMAL { background: var(--normal); } .WATCH { background: var(--watch); }
+  .ALERT { background: var(--alert); } .HIGH_ALERT { background: var(--high); }
+  /* Confirmation mode: exactly one of CUSUM/EWMA fired. Logged for
+     investigation, no community alert raised. */
+  .PROVISIONAL { background: var(--provisional); }
+  .sent { color: var(--normal); font-weight: 600; }
+  .skipped, .pending { color: var(--muted); }
+  .failed { color: var(--high); font-weight: 600; }
+  form.filters { display: flex; gap: 10px; flex-wrap: wrap; align-items: end; }
+  label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+  select, input[type=text], input[type=number], input[type=password] {
+    padding: 6px 8px; border: 1px solid var(--line); border-radius: 5px;
+    font: inherit; background: #fff; min-width: 130px; }
+  button { padding: 7px 15px; border: 0; border-radius: 5px; background: var(--accent);
+           color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+  button:hover { background: #17496b; }
+  a.link { color: var(--accent); }
+  .muted { color: var(--muted); }
+  .note { background: #fff8e6; border: 1px solid #f0dca8; border-radius: 6px;
+          padding: 10px 12px; font-size: 13px; margin-bottom: 16px; }
+  .empty { color: var(--muted); padding: 18px 0; }
+  code { background: #eef1f4; padding: 1px 5px; border-radius: 3px; font-size: 12.5px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <span class="brand">EpiAlert</span>
+    <nav>
+      <a href="/">Dashboard</a>
+      <a href="/upload">Upload</a>
+      <a href="/results">Results</a>
+      <a href="/alerts">Alerts</a>
+      <a href="/statistics">Statistics</a>
+      <a href="/evaluation">Evaluation</a>
+      <a href="/sms">SMS</a>
+    </nav>
+    <span class="who">{{ user }}</span>
+    <a href="/logout" style="color:#fff;font-size:13px;">Sign out</a>
+  </div>
+</header>
+<main>
+{% block body %}{% endblock %}
+</main>
+</body>
+</html>

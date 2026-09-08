@@ -1,0 +1,13 @@
+mysql-connector-python
+python-dotenv
+pydantic
+numpy
+pytest
+fastapi
+uvicorn
+jinja2
+python-multipart
+bcrypt
+itsdangerous
+requests
+httpx

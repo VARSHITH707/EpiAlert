@@ -1,0 +1,7 @@
+event_id,village,disease,start_week,end_week,affected_streets,event_type
+E001,Village A,Dengue,27,33,"Street 4",gradual_outbreak
+E002,Village B,Malaria,40,47,"Street 3; Street 4; Street 5",multi_street_spread
+E003,Village C,Influenza/ARI,58,66,"Street 1; Street 10; Street 2; Street 3; Street 4; Street 5; Street 6; Street 7; Street 8; Street 9",village_wide_increase
+E004,Village A,Chikungunya,72,75,"Street 2; Street 3",temporary_spike
+E005,Village B,Acute Gastroenteritis,82,89,"Street 6",sustained_increase
+E006,Village C,Dengue,93,96,"Street 7; Street 8",sudden_outbreak

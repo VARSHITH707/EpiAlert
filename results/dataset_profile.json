@@ -1,0 +1,91 @@
+{
+  "week_count": 104,
+  "week_range": [
+    "week_001",
+    "week_104"
+  ],
+  "reports_per_week_sample": {
+    "week_001": 3000,
+    "week_002": 3000,
+    "week_003": 3000,
+    "week_104": 3000
+  },
+  "report_examples": [
+    {
+      "week": "week_001",
+      "filename": "P0001.txt",
+      "content": "The health assessment on 12 January 2025 recorded P0001 of Street 1, Village A with no infection."
+    },
+    {
+      "week": "week_050",
+      "filename": "P0001.txt",
+      "content": "The health assessment on 21 December 2025 recorded P0001 of Street 1, Village A with no infection."
+    },
+    {
+      "week": "week_104",
+      "filename": "P0001.txt",
+      "content": "P0001, from Village A, Street 1, was recorded with no reported infection on 03 January 2027."
+    }
+  ],
+  "disease_names": [
+    "Dengue",
+    "Malaria",
+    "Chikungunya",
+    "Influenza/ARI",
+    "Acute Gastroenteritis"
+  ],
+  "disease_counts_sample": {
+    "Acute Gastroenteritis": 4,
+    "Influenza/ARI": 5,
+    "Dengue": 1
+  },
+  "no_infection_count_sample": 225,
+  "ground_truth_exists": true,
+  "ground_truth_columns": [
+    "event_id",
+    "village",
+    "disease",
+    "start_week",
+    "end_week",
+    "affected_streets",
+    "event_type"
+  ],
+  "ground_truth_rows": 6,
+  "ground_truth_sample": [
+    {
+      "event_id": "E001",
+      "village": "Village A",
+      "disease": "Dengue",
+      "start_week": "27",
+      "end_week": "33",
+      "affected_streets": "Street 4",
+      "event_type": "gradual_outbreak"
+    },
+    {
+      "event_id": "E002",
+      "village": "Village B",
+      "disease": "Malaria",
+      "start_week": "40",
+      "end_week": "47",
+      "affected_streets": "Street 3; Street 4; Street 5",
+      "event_type": "multi_street_spread"
+    },
+    {
+      "event_id": "E003",
+      "village": "Village C",
+      "disease": "Influenza/ARI",
+      "start_week": "58",
+      "end_week": "66",
+      "affected_streets": "Street 1; Street 10; Street 2; Street 3; Street 4; Street 5; Street 6; Street 7; Street 8; Street 9",
+      "event_type": "village_wide_increase"
+    }
+  ],
+  "reporting_date_check": {
+    "weeks_checked": 20,
+    "all_sundays": true,
+    "issues": []
+  },
+  "week_zero_reference": "2025-01-12",
+  "week_104_date": "2027-01-03",
+  "duplicate_persons_in_samples": []
+}

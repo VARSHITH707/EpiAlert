@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — EpiAlert{% endblock %}
+{% block body %}
+<h1>Dashboard</h1>
+<p class="sub">Live counts read from the database.</p>
+
+<div class="cards">
+  <div class="card"><div class="n">{{ "{:,}".format(counts.people) }}</div><div class="k">People</div></div>
+  <div class="card"><div class="n">{{ "{:,}".format(counts.reports) }}</div><div class="k">Reports</div></div>
+  <div class="card"><div class="n">{{ "{:,}".format(counts.detection_results) }}</div><div class="k">Detection results</div></div>
+  <div class="card"><div class="n">{{ "{:,}".format(counts.alerts) }}</div><div class="k">Alerts</div></div>
+  <div class="card"><div class="n">{{ counts.alerts_high }}</div><div class="k">High alerts</div></div>
+  <div class="card"><div class="n">{{ counts.sms }}</div><div class="k">SMS sent</div></div>
+  <div class="card"><div class="n">{{ counts.sms_phones }}</div><div class="k">Distinct numbers</div></div>
+  <div class="card"><div class="n">{{ counts.spatial_units }}</div><div class="k">Spatial units</div></div>
+</div>
+
+<div class="panel">
+  <h2>Detection results by status</h2>
+  {% if breakdown %}
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Fusion mode</th><th>Status</th><th>Unit-weeks</th></tr></thead>
+    <tbody>
+      {% for r in breakdown %}
+      <tr>
+        <td>{{ r.fusion_mode }}</td>
+        <td><span class="tag {{ r.status }}">{{ r.status }}</span></td>
+        <td>{{ "{:,}".format(r.n) }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <p class="empty">No detection results yet. Run <code>python -m src.cli evaluate</code>.</p>
+  {% endif %}
+</div>
+
+<div class="panel">
+  <h2>Recent alerts</h2>
+  {% if recent %}
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Week</th><th>Disease</th><th>Village</th><th>Street</th>
+      <th>Status</th><th>Observed</th><th>Expected</th><th></th></tr></thead>
+    <tbody>
+      {% for a in recent %}
+      <tr>
+        <td>{{ a.week_number }}</td>
+        <td>{{ a.disease }}</td>
+        <td>{{ a.village }}</td>
+        <td>{{ a.street }}</td>
+        <td><span class="tag {{ a.status }}">{{ a.status }}</span></td>
+        <td>{{ a.observed_count }}</td>
+        <td>{{ "%.2f"|format(a.expected_count or 0) }}</td>
+        <td><a class="link" href="/alerts/{{ a.alert_id }}">View</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <p class="empty">No alerts yet. Run <code>python -m src.cli alerts</code>.</p>
+  {% endif %}
+</div>
+{% endblock %}

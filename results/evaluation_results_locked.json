@@ -1,0 +1,2483 @@
+{
+  "outbreak_summary": {
+    "total_outbreaks_in_ground_truth": 6,
+    "weeks_with_outbreak": 40,
+    "outbreak_duration_total_weeks": 40
+  },
+  "detection_by_type": {
+    "baseline": {
+      "TRUE_POSITIVE": 24,
+      "FALSE_POSITIVE": 17,
+      "FALSE_NEGATIVE": 16,
+      "TRUE_NEGATIVE": 27
+    },
+    "cusum": {
+      "TRUE_POSITIVE": 9,
+      "FALSE_POSITIVE": 6,
+      "FALSE_NEGATIVE": 31,
+      "TRUE_NEGATIVE": 38
+    },
+    "ewma": {
+      "TRUE_POSITIVE": 5,
+      "FALSE_POSITIVE": 2,
+      "FALSE_NEGATIVE": 35,
+      "TRUE_NEGATIVE": 42
+    }
+  },
+  "detector_performance": {
+    "baseline": {
+      "tp": 24,
+      "fp": 17,
+      "fn": 16,
+      "tn": 27,
+      "sensitivity": 0.6,
+      "specificity": 0.6136363636363636,
+      "precision": 0.5853658536585366,
+      "recall": 0.6,
+      "f1_score": 0.5925925925925926,
+      "total_alerted": 41,
+      "total_outbreaks": 40
+    },
+    "cusum": {
+      "tp": 9,
+      "fp": 6,
+      "fn": 31,
+      "tn": 38,
+      "sensitivity": 0.225,
+      "specificity": 0.8636363636363636,
+      "precision": 0.6,
+      "recall": 0.225,
+      "f1_score": 0.3272727272727273,
+      "total_alerted": 15,
+      "total_outbreaks": 40
+    },
+    "ewma": {
+      "tp": 5,
+      "fp": 2,
+      "fn": 35,
+      "tn": 42,
+      "sensitivity": 0.125,
+      "specificity": 0.9545454545454546,
+      "precision": 0.7142857142857143,
+      "recall": 0.125,
+      "f1_score": 0.2127659574468085,
+      "total_alerted": 7,
+      "total_outbreaks": 40
+    }
+  },
+  "outbreak_detection_details": [
+    {
+      "week": 21,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 21,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 21,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 22,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 22,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 22,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 23,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 23,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 23,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 24,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 24,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 24,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 25,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 25,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 25,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 26,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 26,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 26,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 27,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 27,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 27,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 28,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 2,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 28,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 28,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 29,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 3,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 29,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 29,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 30,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 30,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 30,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 31,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 31,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 31,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 32,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 6,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 32,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 32,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 33,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 33,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 33,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E001"
+    },
+    {
+      "week": 34,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 34,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 34,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 35,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 35,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 35,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 36,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 36,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 36,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 37,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 37,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 37,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 38,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 38,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 38,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 39,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 39,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 39,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 40,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 40,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 40,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 41,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 2,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 41,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 2,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 41,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 2,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 42,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 42,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 42,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 43,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 4,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 43,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 4,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 43,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 44,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 5,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 44,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 5,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 44,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 45,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 6,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 45,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 6,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 45,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 46,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 7,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 46,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 7,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 46,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 7,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 47,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 8,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 47,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 8,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 47,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 8,
+      "outbreak_id": "E002"
+    },
+    {
+      "week": 48,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 48,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 48,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 49,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 49,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 49,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 50,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 50,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 50,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 51,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 51,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 51,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 52,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 52,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 52,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 53,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 53,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 53,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 54,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 54,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 54,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 55,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 55,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 55,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 56,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 56,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 56,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 57,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 57,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 57,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 58,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 1,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 58,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 58,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 59,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 59,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 59,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 60,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 3,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 60,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 60,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 61,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 4,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 61,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 61,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 62,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 5,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 62,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 62,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 63,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 6,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 63,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 63,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 64,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 7,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 64,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 7,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 64,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 65,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 8,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 65,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 8,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 65,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 8,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 66,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 66,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 9,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 66,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 9,
+      "outbreak_id": "E003"
+    },
+    {
+      "week": 67,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 67,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 67,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 68,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 68,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 68,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 69,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 69,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 69,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 70,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 70,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 70,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 71,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 71,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 71,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 72,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 72,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 72,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 73,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 73,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 73,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 74,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 74,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 74,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 75,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 75,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 75,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E004"
+    },
+    {
+      "week": 76,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 76,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 76,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 77,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 77,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 77,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 78,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 78,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 78,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 79,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 79,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 79,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 80,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 80,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 80,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 81,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 81,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 81,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 82,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 1,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 82,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 82,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 83,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 83,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 83,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 84,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 3,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 84,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 84,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 85,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 4,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 85,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 85,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 86,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 5,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 86,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 86,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 87,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 87,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 87,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 88,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 7,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 88,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 88,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 89,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 89,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 89,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E005"
+    },
+    {
+      "week": 90,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 90,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 90,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 91,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 91,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 91,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 92,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 92,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 92,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 93,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 1,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 93,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 93,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 94,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 2,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 94,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 94,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 95,
+      "outbreak_active": true,
+      "algorithm_alert": true,
+      "detection_type": "TRUE_POSITIVE",
+      "lead_time_weeks": 3,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 95,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 95,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 96,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 96,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 96,
+      "outbreak_active": true,
+      "algorithm_alert": false,
+      "detection_type": "FALSE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": "E006"
+    },
+    {
+      "week": 97,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 97,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 97,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 98,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 98,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 98,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 99,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 99,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 99,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 100,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 100,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 100,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 101,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 101,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 101,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 102,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 102,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 102,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 103,
+      "outbreak_active": false,
+      "algorithm_alert": true,
+      "detection_type": "FALSE_POSITIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 103,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 103,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 104,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 104,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    },
+    {
+      "week": 104,
+      "outbreak_active": false,
+      "algorithm_alert": false,
+      "detection_type": "TRUE_NEGATIVE",
+      "lead_time_weeks": null,
+      "outbreak_id": null
+    }
+  ],
+  "lead_time_analysis": {
+    "baseline": {
+      "positive_lead_times": [
+        2,
+        3,
+        6,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        1,
+        3,
+        4,
+        5,
+        7,
+        1,
+        2,
+        3
+      ],
+      "average_lead_time": 4.291666666666667,
+      "median_lead_time": 4.0,
+      "min_lead_time": 1,
+      "max_lead_time": 8,
+      "tp_count": 24
+    },
+    "cusum": {
+      "positive_lead_times": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        7,
+        8,
+        9
+      ],
+      "average_lead_time": 6.222222222222222,
+      "median_lead_time": 7.0,
+      "min_lead_time": 2,
+      "max_lead_time": 9,
+      "tp_count": 9
+    },
+    "ewma": {
+      "positive_lead_times": [
+        2,
+        7,
+        8,
+        8,
+        9
+      ],
+      "average_lead_time": 6.8,
+      "median_lead_time": 8.0,
+      "min_lead_time": 2,
+      "max_lead_time": 9,
+      "tp_count": 5
+    }
+  },
+  "missed_outbreaks": {
+    "count": 15,
+    "details": [
+      {
+        "week": 27,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 27,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 27,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 30,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 30,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 30,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 31,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 31,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 31,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 33,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 33,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 33,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E001"
+        ]
+      },
+      {
+        "week": 40,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E002"
+        ]
+      },
+      {
+        "week": 40,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E002"
+        ]
+      },
+      {
+        "week": 40,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E002"
+        ]
+      },
+      {
+        "week": 42,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E002"
+        ]
+      },
+      {
+        "week": 42,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E002"
+        ]
+      },
+      {
+        "week": 42,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E002"
+        ]
+      },
+      {
+        "week": 59,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E003"
+        ]
+      },
+      {
+        "week": 59,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E003"
+        ]
+      },
+      {
+        "week": 59,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E003"
+        ]
+      },
+      {
+        "week": 72,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 72,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 72,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 73,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 73,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 73,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 74,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 74,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 74,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 75,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 75,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 75,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E004"
+        ]
+      },
+      {
+        "week": 83,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E005"
+        ]
+      },
+      {
+        "week": 83,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E005"
+        ]
+      },
+      {
+        "week": 83,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E005"
+        ]
+      },
+      {
+        "week": 87,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E005"
+        ]
+      },
+      {
+        "week": 87,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E005"
+        ]
+      },
+      {
+        "week": 87,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E005"
+        ]
+      },
+      {
+        "week": 89,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E005"
+        ]
+      },
+      {
+        "week": 89,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E005"
+        ]
+      },
+      {
+        "week": 89,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E005"
+        ]
+      },
+      {
+        "week": 96,
+        "detector": "baseline",
+        "outbreak_ids": [
+          "E006"
+        ]
+      },
+      {
+        "week": 96,
+        "detector": "cusum",
+        "outbreak_ids": [
+          "E006"
+        ]
+      },
+      {
+        "week": 96,
+        "detector": "ewma",
+        "outbreak_ids": [
+          "E006"
+        ]
+      }
+    ]
+  },
+  "fairness_check": {
+    "no_future_leakage": true,
+    "methodology_description": "Outbreak evaluation uses ground truth only post-hoc for evaluation comparison. Detection alerts were generated without future ground truth information. Temporal ordering was maintained throughout: baseline for week N used weeks 1..N-1 only."
+  },
+  "parameters_used": {
+    "cusum_h": 5.0,
+    "cusum_k": 0.5,
+    "ewma_alpha": 0.2,
+    "ewma_L": 3.0
+  }
+}

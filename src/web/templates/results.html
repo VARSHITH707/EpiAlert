@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title %}Results — EpiAlert{% endblock %}
+{% block body %}
+<h1>Detection results</h1>
+<p class="sub">Per (village, street) unit-week. Street names repeat across villages, so both are always shown.</p>
+
+<div class="panel">
+  <form class="filters" method="get" action="/results">
+    <div>
+      <label for="disease">Disease</label>
+      <select id="disease" name="disease">
+        <option value="">All</option>
+        {% for d in options.diseases %}
+        <option value="{{ d }}" {% if selected.disease == d %}selected{% endif %}>{{ d }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label for="village">Village</label>
+      <select id="village" name="village">
+        <option value="">All</option>
+        {% for v in options.villages %}
+        <option value="{{ v }}" {% if selected.village == v %}selected{% endif %}>{{ v }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label for="street">Street</label>
+      <select id="street" name="street">
+        <option value="">All</option>
+        {% for s in options.streets %}
+        <option value="{{ s }}" {% if selected.street == s %}selected{% endif %}>{{ s }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label for="week">Week</label>
+      <input id="week" name="week" type="number" min="1" max="200"
+             value="{{ selected.week or '' }}" placeholder="any">
+    </div>
+    <div>
+      <label for="status_filter">Status</label>
+      <select id="status_filter" name="status_filter">
+        <option value="">All</option>
+        {% for s in ['NORMAL','WATCH','ALERT','HIGH_ALERT'] %}
+        <option value="{{ s }}" {% if selected.status == s %}selected{% endif %}>{{ s }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label for="fusion_mode">Fusion mode</label>
+      <select id="fusion_mode" name="fusion_mode">
+        {% for m in ['confirmation','union'] %}
+        <option value="{{ m }}" {% if selected.fusion_mode == m %}selected{% endif %}>{{ m }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <button type="submit">Apply</button>
+  </form>
+</div>
+
+<div class="panel">
+  <h2>{{ rows|length }} row(s) &middot; {{ selected.fusion_mode }} mode</h2>
+  {% if rows %}
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Week</th><th>Disease</th><th>Village</th><th>Street</th>
+      <th>Observed</th><th>Expected</th><th>CUSUM</th><th>EWMA</th><th>Status</th></tr></thead>
+    <tbody>
+      {% for r in rows %}
+      <tr>
+        <td>{{ r.week_number }}</td>
+        <td>{{ r.disease }}</td>
+        <td>{{ r.village }}</td>
+        <td>{{ r.street }}</td>
+        <td>{{ r.observed_count }}</td>
+        <td>{{ "%.2f"|format(r.expected_count or 0) }}</td>
+        <td>{{ 'yes' if r.cusum_signal else '—' }}</td>
+        <td>{{ 'yes' if r.ewma_signal else '—' }}</td>
+        <td><span class="tag {{ r.status }}">{{ r.status }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <p class="empty">No results match these filters.</p>
+  {% endif %}
+</div>
+{% endblock %}

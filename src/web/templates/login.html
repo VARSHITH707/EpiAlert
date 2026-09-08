@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — EpiAlert</title>
+<style>
+  body { margin: 0; font: 15px/1.5 system-ui, -apple-system, Segoe UI, sans-serif;
+         background: #f6f7f9; color: #1b1f24; display: flex;
+         align-items: center; justify-content: center; min-height: 100vh; }
+  .box { background: #fff; border: 1px solid #dfe3e8; border-radius: 8px;
+         padding: 28px; width: 340px; }
+  h1 { font-size: 20px; margin: 0 0 2px; }
+  p.sub { color: #626c76; font-size: 13px; margin: 0 0 20px; }
+  label { display: block; font-size: 12px; color: #626c76; margin-bottom: 4px; }
+  input { width: 100%; padding: 8px 10px; border: 1px solid #dfe3e8;
+          border-radius: 5px; font: inherit; margin-bottom: 14px; }
+  button { width: 100%; padding: 9px; border: 0; border-radius: 5px;
+           background: #1f5f8b; color: #fff; font: inherit; font-weight: 600;
+           cursor: pointer; }
+  button:hover { background: #17496b; }
+  .err { background: #fdecea; border: 1px solid #f5c2bd; color: #b3261e;
+         padding: 9px 11px; border-radius: 5px; font-size: 13px; margin-bottom: 16px; }
+  .note { background: #fff8e6; border: 1px solid #f0dca8; padding: 9px 11px;
+          border-radius: 5px; font-size: 12.5px; margin-bottom: 16px; }
+  code { background: #eef1f4; padding: 1px 4px; border-radius: 3px; font-size: 12px; }
+</style>
+</head>
+<body>
+  <form class="box" method="post" action="/login">
+    <h1>EpiAlert</h1>
+    <p class="sub">Disease outbreak early warning</p>
+
+    {% if error %}<div class="err">{{ error }}</div>{% endif %}
+
+    {% if no_users %}
+    <div class="note">
+      No accounts exist yet. Create one with:<br>
+      <code>python -m src.cli createuser --username admin</code>
+    </div>
+    {% endif %}
+
+    <label for="username">Username</label>
+    <input id="username" name="username" autocomplete="username" required autofocus>
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password"
+           autocomplete="current-password" required>
+
+    <button type="submit">Sign in</button>
+  </form>
+</body>
+</html>

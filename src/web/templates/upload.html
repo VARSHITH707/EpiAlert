@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Upload — EpiAlert{% endblock %}
+{% block body %}
+<h1>Upload a week of reports</h1>
+<p class="sub">New incoming data. Weeks 1&ndash;104 are the historical record and cannot be overwritten.</p>
+
+{% if error %}
+<div class="note" style="background:#fdecea;border-color:#f5c2bd;">{{ error }}</div>
+{% endif %}
+
+{% if result %}
+<div class="panel">
+  <h2>Week {{ result.week }} processed</h2>
+  <div class="cards">
+    <div class="card"><div class="n">{{ result.reports_uploaded }}</div><div class="k">Reports uploaded</div></div>
+    <div class="card"><div class="n">{{ result.valid }}</div><div class="k">Valid</div></div>
+    <div class="card"><div class="n">{{ result.quarantined }}</div><div class="k">Quarantined</div></div>
+    <div class="card"><div class="n">{{ result.status }}</div><div class="k">Ingest status</div></div>
+  </div>
+
+  {% if result.detection %}
+  <h2>Detection</h2>
+  <p class="muted" style="font-size:13px;">{{ result.detection.rows }} street-week results.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Status</th><th>Units</th></tr></thead>
+    <tbody>
+      {% for status, n in result.detection.summary.items() %}
+      <tr><td><span class="tag {{ status }}">{{ status }}</span></td><td>{{ n }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p style="margin-top:14px;">
+    <a class="link" href="/results?week={{ result.week }}">View these results</a> &middot;
+    <a class="link" href="/alerts">View alerts</a>
+  </p>
+  {% elif result.detection_error %}
+  <div class="note">
+    Reports were stored successfully, but detection failed:
+    <code>{{ result.detection_error }}</code>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+<div class="panel">
+  <h2>Upload</h2>
+  <form method="post" action="/upload" enctype="multipart/form-data" class="filters">
+    <div>
+      <label for="week">Week number</label>
+      <input id="week" name="week" type="number" min="105" max="500"
+             value="{{ next_week }}" required>
+    </div>
+    <div>
+      <label for="file">Reports file</label>
+      <input id="file" name="file" type="file" accept=".txt,.jsonl,.json" required>
+    </div>
+    <button type="submit">Upload and process</button>
+  </form>
+</div>
+
+<div class="panel">
+  <h2>File format</h2>
+  <p class="muted" style="font-size:13.5px;">Either plain text with one report per line:</p>
+  <p><code>On 12 January 2025, P0001 from Street 1 in Village A was reported as having dengue.</code></p>
+  <p class="muted" style="font-size:13.5px;">Or JSONL with <code>person_id</code> and <code>raw_text</code>:</p>
+  <p><code>{"person_id": "P0001", "raw_text": "On 12 January 2025, P0001 ..."}</code></p>
+  <p class="muted" style="font-size:13px;">
+    Each report is extracted and validated the same way the historical data was.
+    Anything that fails validation goes to quarantine rather than into the
+    statistics.
+  </p>
+</div>
+{% endblock %}

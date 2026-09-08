@@ -1,0 +1,3074 @@
+[
+  {
+    "template": "<PERSON>, from village a, street 6, was recorded with no reported infection on <DATE>.",
+    "count": 3776
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 6, village a with no infection.",
+    "count": 3692
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 3, village a with no infection.",
+    "count": 3680
+  },
+  {
+    "template": "<PERSON>, from village a, street 3, was recorded with no reported infection on <DATE>.",
+    "count": 3619
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village a was reported as having no infection.",
+    "count": 3613
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village a had no infection reported.",
+    "count": 3574
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village a, street 3, on <DATE>.",
+    "count": 3566
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village a, street 6, on <DATE>.",
+    "count": 3566
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village a was reported as having no infection.",
+    "count": 3545
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village a had no infection reported.",
+    "count": 3517
+  },
+  {
+    "template": "<PERSON>, from village a, street 1, was recorded with no reported infection on <DATE>.",
+    "count": 3206
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village a, street 4, on <DATE>.",
+    "count": 3156
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 4, village a with no infection.",
+    "count": 3145
+  },
+  {
+    "template": "<PERSON>, from village a, street 4, was recorded with no reported infection on <DATE>.",
+    "count": 3123
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village a had no infection reported.",
+    "count": 3098
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village a had no infection reported.",
+    "count": 3045
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 1, village a with no infection.",
+    "count": 3022
+  },
+  {
+    "template": "<PERSON>, from village b, street 8, was recorded with no reported infection on <DATE>.",
+    "count": 3011
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village a was reported as having no infection.",
+    "count": 2983
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 3, village b with no infection.",
+    "count": 2965
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village a, street 1, on <DATE>.",
+    "count": 2940
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village a was reported as having no infection.",
+    "count": 2916
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village b, street 8, on <DATE>.",
+    "count": 2914
+  },
+  {
+    "template": "<PERSON>, from village b, street 3, was recorded with no reported infection on <DATE>.",
+    "count": 2908
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 8, village b with no infection.",
+    "count": 2906
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village b had no infection reported.",
+    "count": 2898
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village b had no infection reported.",
+    "count": 2845
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village b was reported as having no infection.",
+    "count": 2833
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village b, street 3, on <DATE>.",
+    "count": 2816
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village b was reported as having no infection.",
+    "count": 2770
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 1, village b with no infection.",
+    "count": 2646
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village a had no infection reported.",
+    "count": 2608
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village a, street 2, on <DATE>.",
+    "count": 2601
+  },
+  {
+    "template": "<PERSON>, from village a, street 2, was recorded with no reported infection on <DATE>.",
+    "count": 2583
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 2, village a with no infection.",
+    "count": 2582
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village a was reported as having no infection.",
+    "count": 2570
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village b had no infection reported.",
+    "count": 2567
+  },
+  {
+    "template": "<PERSON>, from village b, street 1, was recorded with no reported infection on <DATE>.",
+    "count": 2559
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village b was reported as having no infection.",
+    "count": 2527
+  },
+  {
+    "template": "<PERSON>, from village c, street 3, was recorded with no reported infection on <DATE>.",
+    "count": 2504
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village b, street 1, on <DATE>.",
+    "count": 2498
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 3, village c with no infection.",
+    "count": 2496
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village c had no infection reported.",
+    "count": 2469
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village c was reported as having no infection.",
+    "count": 2441
+  },
+  {
+    "template": "<PERSON>, from village b, street 4, was recorded with no reported infection on <DATE>.",
+    "count": 2434
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village c had no infection reported.",
+    "count": 2426
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village c, street 2, on <DATE>.",
+    "count": 2418
+  },
+  {
+    "template": "<PERSON>, from village c, street 2, was recorded with no reported infection on <DATE>.",
+    "count": 2407
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 2, village c with no infection.",
+    "count": 2405
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village a had no infection reported.",
+    "count": 2382
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village b was reported as having no infection.",
+    "count": 2369
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village c, street 3, on <DATE>.",
+    "count": 2364
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village c was reported as having no infection.",
+    "count": 2359
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 4, village b with no infection.",
+    "count": 2356
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village b, street 4, on <DATE>.",
+    "count": 2346
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 7, village b with no infection.",
+    "count": 2345
+  },
+  {
+    "template": "<PERSON>, from village c, street 7, was recorded with no reported infection on <DATE>.",
+    "count": 2325
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village b, street 7, on <DATE>.",
+    "count": 2320
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village b had no infection reported.",
+    "count": 2308
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village c had no infection reported.",
+    "count": 2306
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village b was reported as having no infection.",
+    "count": 2300
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village b had no infection reported.",
+    "count": 2300
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village c, street 5, on <DATE>.",
+    "count": 2293
+  },
+  {
+    "template": "<PERSON>, from village b, street 7, was recorded with no reported infection on <DATE>.",
+    "count": 2292
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village c had no infection reported.",
+    "count": 2277
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village c was reported as having no infection.",
+    "count": 2273
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village c was reported as having no infection.",
+    "count": 2271
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village b was reported as having no infection.",
+    "count": 2265
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village a, street 7, on <DATE>.",
+    "count": 2251
+  },
+  {
+    "template": "<PERSON>, from village c, street 5, was recorded with no reported infection on <DATE>.",
+    "count": 2250
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village c, street 4, on <DATE>.",
+    "count": 2249
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village a was reported as having no infection.",
+    "count": 2246
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village c was reported as having no infection.",
+    "count": 2246
+  },
+  {
+    "template": "<PERSON>, from village a, street 7, was recorded with no reported infection on <DATE>.",
+    "count": 2241
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 4, village c with no infection.",
+    "count": 2233
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 5, village c with no infection.",
+    "count": 2226
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village c, street 7, on <DATE>.",
+    "count": 2222
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village a was reported as having no infection.",
+    "count": 2211
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 7, village c with no infection.",
+    "count": 2198
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 7, village a with no infection.",
+    "count": 2183
+  },
+  {
+    "template": "<PERSON>, from village c, street 4, was recorded with no reported infection on <DATE>.",
+    "count": 2176
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village b, street 6, on <DATE>.",
+    "count": 2167
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village c had no infection reported.",
+    "count": 2162
+  },
+  {
+    "template": "<PERSON>, from village b, street 6, was recorded with no reported infection on <DATE>.",
+    "count": 2148
+  },
+  {
+    "template": "<PERSON>, from village a, street 5, was recorded with no reported infection on <DATE>.",
+    "count": 2135
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 5, village a with no infection.",
+    "count": 2115
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 6, village b with no infection.",
+    "count": 2104
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village b had no infection reported.",
+    "count": 2075
+  },
+  {
+    "template": "<PERSON>, from village c, street 1, was recorded with no reported infection on <DATE>.",
+    "count": 2066
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village a had no infection reported.",
+    "count": 2058
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village a, street 5, on <DATE>.",
+    "count": 2049
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village c had no infection reported.",
+    "count": 2042
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village c, street 1, on <DATE>.",
+    "count": 2039
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 1, village c with no infection.",
+    "count": 2023
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village c was reported as having no infection.",
+    "count": 2007
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 10 in village c was reported as having no infection.",
+    "count": 1928
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village c, street 10, on <DATE>.",
+    "count": 1901
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village b was reported as having no infection.",
+    "count": 1854
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 10, village c with no infection.",
+    "count": 1837
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 10 in village c had no infection reported.",
+    "count": 1831
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 5, village b with no infection.",
+    "count": 1829
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village b had no infection reported.",
+    "count": 1825
+  },
+  {
+    "template": "<PERSON>, from village c, street 10, was recorded with no reported infection on <DATE>.",
+    "count": 1811
+  },
+  {
+    "template": "<PERSON>, from village b, street 5, was recorded with no reported infection on <DATE>.",
+    "count": 1808
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village b, street 9, on <DATE>.",
+    "count": 1789
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 9, village b with no infection.",
+    "count": 1782
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 9, village c with no infection.",
+    "count": 1777
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village b had no infection reported.",
+    "count": 1766
+  },
+  {
+    "template": "<PERSON>, from village c, street 9, was recorded with no reported infection on <DATE>.",
+    "count": 1759
+  },
+  {
+    "template": "<PERSON>, from village b, street 9, was recorded with no reported infection on <DATE>.",
+    "count": 1755
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village c, street 9, on <DATE>.",
+    "count": 1755
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village b, street 5, on <DATE>.",
+    "count": 1750
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village c was reported as having no infection.",
+    "count": 1737
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village b was reported as having no infection.",
+    "count": 1736
+  },
+  {
+    "template": "<PERSON>, from village c, street 8, was recorded with no reported infection on <DATE>.",
+    "count": 1715
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village c had no infection reported.",
+    "count": 1709
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village c had no infection reported.",
+    "count": 1702
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village c, street 8, on <DATE>.",
+    "count": 1700
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 8, village c with no infection.",
+    "count": 1687
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village c was reported as having no infection.",
+    "count": 1648
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village b had no infection reported.",
+    "count": 1638
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village b was reported as having no infection.",
+    "count": 1630
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village b, street 2, on <DATE>.",
+    "count": 1601
+  },
+  {
+    "template": "<PERSON>, from village b, street 2, was recorded with no reported infection on <DATE>.",
+    "count": 1588
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 2, village b with no infection.",
+    "count": 1559
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village c had no infection reported.",
+    "count": 1435
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village c was reported as having no infection.",
+    "count": 1413
+  },
+  {
+    "template": "no infection was reported for <PERSON> from village c, street 6, on <DATE>.",
+    "count": 1411
+  },
+  {
+    "template": "the health assessment on <DATE> recorded <PERSON> of street 6, village c with no infection.",
+    "count": 1393
+  },
+  {
+    "template": "<PERSON>, from village c, street 6, was recorded with no reported infection on <DATE>.",
+    "count": 1374
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village a was reported with influenza/ari.",
+    "count": 50
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village a, street 6, on <DATE>.",
+    "count": 49
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village a with influenza/ari on <DATE>.",
+    "count": 45
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village a, street 1, on <DATE>.",
+    "count": 44
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village a was reported with influenza/ari.",
+    "count": 42
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village a with influenza/ari on <DATE>.",
+    "count": 42
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 6 was reported to have influenza/ari.",
+    "count": 42
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village a was reported with influenza/ari.",
+    "count": 40
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 1, was reported positive for influenza/ari on <DATE>.",
+    "count": 40
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village b was reported with influenza/ari.",
+    "count": 39
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 4 was reported to have influenza/ari.",
+    "count": 39
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village a was reported with influenza/ari.",
+    "count": 39
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village c with influenza/ari on <DATE>.",
+    "count": 38
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 6, was reported positive for influenza/ari on <DATE>.",
+    "count": 38
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village c, street 2, on <DATE>.",
+    "count": 37
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village a, street 4, on <DATE>.",
+    "count": 37
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 3 was reported to have influenza/ari.",
+    "count": 36
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 4 was reported to have influenza/ari.",
+    "count": 35
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 3, was reported positive for influenza/ari on <DATE>.",
+    "count": 35
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village b, street 1, on <DATE>.",
+    "count": 34
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 8, was reported positive for influenza/ari on <DATE>.",
+    "count": 34
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village c, street 3, on <DATE>.",
+    "count": 34
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 1 was reported to have influenza/ari.",
+    "count": 34
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village b, street 4, on <DATE>.",
+    "count": 32
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village c was reported with influenza/ari.",
+    "count": 32
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village b with influenza/ari on <DATE>.",
+    "count": 31
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 4, was reported positive for influenza/ari on <DATE>.",
+    "count": 31
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village a with influenza/ari on <DATE>.",
+    "count": 29
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village a with acute gastroenteritis on <DATE>.",
+    "count": 29
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village c, street 4, on <DATE>.",
+    "count": 29
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village c was reported with influenza/ari.",
+    "count": 29
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village c, street 10, on <DATE>.",
+    "count": 29
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 1, was reported positive for influenza/ari on <DATE>.",
+    "count": 29
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 9, village c with influenza/ari on <DATE>.",
+    "count": 29
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village b was reported with influenza/ari.",
+    "count": 29
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 3, was reported positive for influenza/ari on <DATE>.",
+    "count": 29
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village a, street 5, on <DATE>.",
+    "count": 28
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village a was reported with dengue.",
+    "count": 28
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 1 was reported to have influenza/ari.",
+    "count": 28
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village b with influenza/ari on <DATE>.",
+    "count": 28
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 10, was reported positive for influenza/ari on <DATE>.",
+    "count": 28
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 3, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 27
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village a was reported with influenza/ari.",
+    "count": 27
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 3, was reported positive for influenza/ari on <DATE>.",
+    "count": 27
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village a with influenza/ari on <DATE>.",
+    "count": 26
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village a was reported with acute gastroenteritis.",
+    "count": 26
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 5 was reported to have influenza/ari.",
+    "count": 26
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village a, street 4, on <DATE>.",
+    "count": 26
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village b with influenza/ari on <DATE>.",
+    "count": 26
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 4 was reported to have influenza/ari.",
+    "count": 26
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village b, street 6, on <DATE>.",
+    "count": 26
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 6 was reported to have acute gastroenteritis.",
+    "count": 26
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village a with influenza/ari on <DATE>.",
+    "count": 25
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village a, street 3, on <DATE>.",
+    "count": 25
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village a, street 6, on <DATE>.",
+    "count": 25
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 5 was reported to have influenza/ari.",
+    "count": 25
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village b, street 7, on <DATE>.",
+    "count": 25
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village c was reported with influenza/ari.",
+    "count": 25
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village c with influenza/ari on <DATE>.",
+    "count": 25
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 6 was reported to have influenza/ari.",
+    "count": 25
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 7, was reported positive for influenza/ari on <DATE>.",
+    "count": 25
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 5, was reported positive for influenza/ari on <DATE>.",
+    "count": 25
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village a was reported with influenza/ari.",
+    "count": 24
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village b with influenza/ari on <DATE>.",
+    "count": 24
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 6, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 24
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 7 was reported to have influenza/ari.",
+    "count": 24
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 10, village c with influenza/ari on <DATE>.",
+    "count": 24
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village c was reported with influenza/ari.",
+    "count": 24
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village c was reported with influenza/ari.",
+    "count": 24
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 3 was reported to have influenza/ari.",
+    "count": 24
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village b was reported with influenza/ari.",
+    "count": 24
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village c with influenza/ari on <DATE>.",
+    "count": 24
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 3 was reported to have acute gastroenteritis.",
+    "count": 23
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village a, street 3, on <DATE>.",
+    "count": 23
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 4, was reported positive for dengue on <DATE>.",
+    "count": 23
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 6, was reported positive for influenza/ari on <DATE>.",
+    "count": 23
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 10 was reported to have influenza/ari.",
+    "count": 23
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 8 was reported to have influenza/ari.",
+    "count": 23
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village c, street 1, on <DATE>.",
+    "count": 23
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village c, street 7, on <DATE>.",
+    "count": 23
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 9, was reported positive for influenza/ari on <DATE>.",
+    "count": 23
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 3 was reported to have influenza/ari.",
+    "count": 22
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 2, was reported positive for influenza/ari on <DATE>.",
+    "count": 22
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 4, was reported positive for influenza/ari on <DATE>.",
+    "count": 22
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village a with acute gastroenteritis on <DATE>.",
+    "count": 22
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village a, street 2, on <DATE>.",
+    "count": 22
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village b, street 3, on <DATE>.",
+    "count": 22
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village b was reported with influenza/ari.",
+    "count": 22
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 4, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 22
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village a with influenza/ari on <DATE>.",
+    "count": 21
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village a was reported with acute gastroenteritis.",
+    "count": 21
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 6 was reported to have acute gastroenteritis.",
+    "count": 21
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village b, street 9, on <DATE>.",
+    "count": 21
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 1 was reported to have influenza/ari.",
+    "count": 21
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 2 was reported to have influenza/ari.",
+    "count": 21
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village b was reported with influenza/ari.",
+    "count": 21
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 8, village b with influenza/ari on <DATE>.",
+    "count": 21
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 5 was reported to have influenza/ari.",
+    "count": 21
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village b, street 7, on <DATE>.",
+    "count": 20
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 5, was reported positive for influenza/ari on <DATE>.",
+    "count": 20
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 2 was reported to have influenza/ari.",
+    "count": 20
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village c was reported with influenza/ari.",
+    "count": 20
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 3 was reported to have acute gastroenteritis.",
+    "count": 20
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 4 was reported to have acute gastroenteritis.",
+    "count": 20
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 9 was reported to have influenza/ari.",
+    "count": 20
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village a was reported with acute gastroenteritis.",
+    "count": 20
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 8 was reported to have influenza/ari.",
+    "count": 20
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village c with influenza/ari on <DATE>.",
+    "count": 20
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 7 was reported to have influenza/ari.",
+    "count": 19
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village b with acute gastroenteritis on <DATE>.",
+    "count": 19
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 9, was reported positive for influenza/ari on <DATE>.",
+    "count": 19
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 3, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 19
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village c with influenza/ari on <DATE>.",
+    "count": 19
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village b was reported with influenza/ari.",
+    "count": 19
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village b, street 5, on <DATE>.",
+    "count": 19
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village c, street 9, on <DATE>.",
+    "count": 19
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village a, street 6, on <DATE>.",
+    "count": 19
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village c was reported with influenza/ari.",
+    "count": 19
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 7, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 18
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village b with influenza/ari on <DATE>.",
+    "count": 18
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village a with dengue on <DATE>.",
+    "count": 18
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 8 was reported to have acute gastroenteritis.",
+    "count": 18
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village b with influenza/ari on <DATE>.",
+    "count": 18
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 8, village b with acute gastroenteritis on <DATE>.",
+    "count": 18
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village a was reported with influenza/ari.",
+    "count": 18
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 1, was reported positive for influenza/ari on <DATE>.",
+    "count": 18
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 7, was reported positive for influenza/ari on <DATE>.",
+    "count": 18
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 2, was reported positive for influenza/ari on <DATE>.",
+    "count": 18
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 2, was reported positive for influenza/ari on <DATE>.",
+    "count": 18
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 2 was reported to have influenza/ari.",
+    "count": 18
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 4, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 18
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 9, village b with influenza/ari on <DATE>.",
+    "count": 18
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village a with acute gastroenteritis on <DATE>.",
+    "count": 17
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village a with dengue on <DATE>.",
+    "count": 17
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village b with influenza/ari on <DATE>.",
+    "count": 17
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village a with acute gastroenteritis on <DATE>.",
+    "count": 17
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village a with influenza/ari on <DATE>.",
+    "count": 17
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village a, street 1, on <DATE>.",
+    "count": 17
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 6 was reported to have dengue.",
+    "count": 17
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 4 was reported to have acute gastroenteritis.",
+    "count": 17
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village b with acute gastroenteritis on <DATE>.",
+    "count": 17
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 9 was reported to have influenza/ari.",
+    "count": 17
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 1, was reported positive for dengue on <DATE>.",
+    "count": 16
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village b with acute gastroenteritis on <DATE>.",
+    "count": 16
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village b was reported with acute gastroenteritis.",
+    "count": 16
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village c with acute gastroenteritis on <DATE>.",
+    "count": 16
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village c with influenza/ari on <DATE>.",
+    "count": 16
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 7, was reported positive for influenza/ari on <DATE>.",
+    "count": 16
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village a with acute gastroenteritis on <DATE>.",
+    "count": 16
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village b, street 4, on <DATE>.",
+    "count": 16
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village c, street 5, on <DATE>.",
+    "count": 16
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 1 was reported to have acute gastroenteritis.",
+    "count": 16
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 7, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 16
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 10 in village c was reported with influenza/ari.",
+    "count": 16
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village c with acute gastroenteritis on <DATE>.",
+    "count": 15
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 3 was reported to have acute gastroenteritis.",
+    "count": 15
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village b, street 3, on <DATE>.",
+    "count": 15
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 9 was reported to have acute gastroenteritis.",
+    "count": 15
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village a was reported with acute gastroenteritis.",
+    "count": 15
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village c was reported with influenza/ari.",
+    "count": 15
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village b was reported with acute gastroenteritis.",
+    "count": 15
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 3, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 15
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 7, was reported positive for dengue on <DATE>.",
+    "count": 15
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village b, street 8, on <DATE>.",
+    "count": 15
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 1 was reported to have acute gastroenteritis.",
+    "count": 15
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 7 was reported to have influenza/ari.",
+    "count": 15
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 6, was reported positive for influenza/ari on <DATE>.",
+    "count": 15
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 4 was reported to have dengue.",
+    "count": 15
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village b was reported with influenza/ari.",
+    "count": 15
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 8, village c with influenza/ari on <DATE>.",
+    "count": 15
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 4 was reported to have acute gastroenteritis.",
+    "count": 14
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village b with acute gastroenteritis on <DATE>.",
+    "count": 14
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village b, street 9, on <DATE>.",
+    "count": 14
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village a was reported with acute gastroenteritis.",
+    "count": 14
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village b, street 2, on <DATE>.",
+    "count": 14
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 5, was reported positive for influenza/ari on <DATE>.",
+    "count": 14
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village b was reported with acute gastroenteritis.",
+    "count": 14
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village c was reported with acute gastroenteritis.",
+    "count": 14
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 2, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 14
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village b, street 6, on <DATE>.",
+    "count": 14
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 8, was reported positive for influenza/ari on <DATE>.",
+    "count": 14
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village a with dengue on <DATE>.",
+    "count": 14
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 5, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 14
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village b was reported with influenza/ari.",
+    "count": 14
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village c, street 10, on <DATE>.",
+    "count": 14
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village b was reported with influenza/ari.",
+    "count": 14
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village c with influenza/ari on <DATE>.",
+    "count": 14
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village c was reported with acute gastroenteritis.",
+    "count": 14
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village a was reported with dengue.",
+    "count": 13
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village a, street 3, on <DATE>.",
+    "count": 13
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village b was reported with acute gastroenteritis.",
+    "count": 13
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village a, street 2, on <DATE>.",
+    "count": 13
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village b with dengue on <DATE>.",
+    "count": 13
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 1, was reported positive for dengue on <DATE>.",
+    "count": 13
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village b was reported with acute gastroenteritis.",
+    "count": 13
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 7 was reported to have acute gastroenteritis.",
+    "count": 13
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village a with dengue on <DATE>.",
+    "count": 13
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 2 was reported to have acute gastroenteritis.",
+    "count": 13
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village a with dengue on <DATE>.",
+    "count": 13
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 1 was reported to have dengue.",
+    "count": 13
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village c was reported with influenza/ari.",
+    "count": 13
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 1 was reported to have dengue.",
+    "count": 13
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village c was reported with acute gastroenteritis.",
+    "count": 13
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village c, street 7, on <DATE>.",
+    "count": 13
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 8, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 13
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 5 was reported to have acute gastroenteritis.",
+    "count": 13
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 3, was reported positive for dengue on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 3 was reported to have dengue.",
+    "count": 12
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village a, street 7, on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village a, street 4, on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village c, street 10, on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village b, street 1, on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village c, street 5, on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village c, street 3, on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 10, village c with acute gastroenteritis on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village a was reported with malaria.",
+    "count": 12
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village a was reported with acute gastroenteritis.",
+    "count": 12
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village a, street 3, on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 4, was reported positive for dengue on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village c, street 6, on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 5 was reported to have dengue.",
+    "count": 12
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village a was reported with dengue.",
+    "count": 12
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 10, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 2, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village c with acute gastroenteritis on <DATE>.",
+    "count": 12
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 8 was reported to have dengue.",
+    "count": 11
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 9, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village c with acute gastroenteritis on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village c was reported with acute gastroenteritis.",
+    "count": 11
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village c was reported with acute gastroenteritis.",
+    "count": 11
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village c with dengue on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village a, street 1, on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 2, was reported positive for dengue on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village a with acute gastroenteritis on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 5, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 9, village b with acute gastroenteritis on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village b with acute gastroenteritis on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village a was reported with dengue.",
+    "count": 11
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village b with acute gastroenteritis on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 1, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 5, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 2 was reported to have dengue.",
+    "count": 11
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 10, was reported positive for dengue on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village b, street 8, on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 7, was reported positive for dengue on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village c with acute gastroenteritis on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 8, village c with dengue on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village a, street 2, on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 7 was reported to have acute gastroenteritis.",
+    "count": 11
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village b, street 2, on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 1, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 11
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village b, street 5, on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 10 was reported to have dengue.",
+    "count": 10
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village c, street 9, on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village a with acute gastroenteritis on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village a, street 7, on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village b was reported with acute gastroenteritis.",
+    "count": 10
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village c, street 3, on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 7 was reported to have malaria.",
+    "count": 10
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village c was reported with dengue.",
+    "count": 10
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village a, street 1, on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village a, street 2, on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 7 was reported to have acute gastroenteritis.",
+    "count": 10
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 1, was reported positive for dengue on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 4, was reported positive for influenza/ari on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village c was reported with acute gastroenteritis.",
+    "count": 10
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village c was reported with dengue.",
+    "count": 10
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village a with malaria on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 6, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village b with acute gastroenteritis on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 3 was reported to have dengue.",
+    "count": 10
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village a was reported with dengue.",
+    "count": 10
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village a, street 5, on <DATE>.",
+    "count": 10
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village a with malaria on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 6, was reported positive for dengue on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 7, was reported positive for dengue on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village c, street 6, on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village c, street 10, on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 1 was reported to have acute gastroenteritis.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 10 in village c was reported with acute gastroenteritis.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 6 was reported to have influenza/ari.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village b was reported with malaria.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 2 was reported to have acute gastroenteritis.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village b was reported with acute gastroenteritis.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 2 was reported to have dengue.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 5 was reported to have dengue.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 9 was reported to have malaria.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 3 was reported to have dengue.",
+    "count": 9
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 8, village b with dengue on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 4, was reported positive for dengue on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 3 was reported to have malaria.",
+    "count": 9
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village a with dengue on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 5 was reported to have acute gastroenteritis.",
+    "count": 9
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village b, street 8, on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village c, street 8, on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village a, street 7, on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village c, street 2, on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 10, village c with dengue on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 4, was reported positive for malaria on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 8, was reported positive for dengue on <DATE>.",
+    "count": 9
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 8, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village a was reported with malaria.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village b was reported with malaria.",
+    "count": 8
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 9, village c with acute gastroenteritis on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village b with dengue on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village c, street 4, on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 2, was reported positive for dengue on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 6, was reported positive for malaria on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village b was reported with dengue.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 9 was reported to have acute gastroenteritis.",
+    "count": 8
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village c, street 1, on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village c was reported with malaria.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village c was reported with malaria.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village b was reported with malaria.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village c was reported with dengue.",
+    "count": 8
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 6, was reported positive for dengue on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village b, street 3, on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 10, village c with malaria on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 8, was reported positive for malaria on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village c with dengue on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 8 was reported to have malaria.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 7 was reported to have dengue.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village a was reported with dengue.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village a was reported with acute gastroenteritis.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village b was reported with malaria.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 10 was reported to have acute gastroenteritis.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village b was reported with dengue.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 1 was reported to have dengue.",
+    "count": 8
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village c, street 2, on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village b with dengue on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 9 was reported to have dengue.",
+    "count": 8
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 2, was reported positive for malaria on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village b with dengue on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 9 was reported to have dengue.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village a was reported with chikungunya.",
+    "count": 8
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 4, was reported positive for malaria on <DATE>.",
+    "count": 8
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village b was reported with acute gastroenteritis.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village a was reported with chikungunya.",
+    "count": 7
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 5, was reported positive for dengue on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village a, street 6, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village b, street 5, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village b, street 6, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "a influenza/ari infection was reported for <PERSON> from village c, street 8, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 5 was reported to have dengue.",
+    "count": 7
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 5, was reported positive for chikungunya on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village b was reported with dengue.",
+    "count": 7
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village c, street 4, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 7 was reported to have malaria.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village a was reported with malaria.",
+    "count": 7
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village a, street 7, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 1, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 2, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 3, was reported positive for dengue on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village c with malaria on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village c was reported with dengue.",
+    "count": 7
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village a with malaria on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village b was reported with acute gastroenteritis.",
+    "count": 7
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village c, street 5, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 8, village c with acute gastroenteritis on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 4 was reported to have dengue.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village c was reported with dengue.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 1 was reported to have malaria.",
+    "count": 7
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village c, street 3, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village b with dengue on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village c was reported with malaria.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village c was reported with acute gastroenteritis.",
+    "count": 7
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village a, street 5, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 5 was reported to have acute gastroenteritis.",
+    "count": 7
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village b, street 7, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village c was reported with acute gastroenteritis.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village a was reported with dengue.",
+    "count": 7
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village a with chikungunya on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 2 was reported to have dengue.",
+    "count": 7
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village b with malaria on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 7, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village c, street 8, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 10 in village c was reported with dengue.",
+    "count": 7
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village c with acute gastroenteritis on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village c, street 1, on <DATE>.",
+    "count": 7
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 7 was reported to have dengue.",
+    "count": 7
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village c with dengue on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village c with malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 3 was reported to have malaria.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village b was reported with dengue.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 8 was reported to have acute gastroenteritis.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village b with malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village b was reported with malaria.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village a was reported with malaria.",
+    "count": 6
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village b, street 4, on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village c was reported with dengue.",
+    "count": 6
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 3, was reported positive for chikungunya on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 4, was reported positive for malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village c with dengue on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 6, was reported positive for chikungunya on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 4 was reported to have dengue.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 9, village b with malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "a acute gastroenteritis infection was reported for <PERSON> from village c, street 6, on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village c, street 7, on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village c with malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 9, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 6 was reported to have dengue.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 8 was reported to have malaria.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 6 was reported to have acute gastroenteritis.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 2 was reported to have chikungunya.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village c with dengue on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village c with acute gastroenteritis on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village b with malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village b, street 1, on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village b with malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 6 was reported to have dengue.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village c with dengue on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 1 was reported to have malaria.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village b was reported with malaria.",
+    "count": 6
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village b, street 8, on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 7, was reported positive for malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village b was reported with dengue.",
+    "count": 6
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village c, street 1, on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village a was reported with chikungunya.",
+    "count": 6
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 4, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 9, was reported positive for malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village c with malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 1, was reported positive for malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village a was reported with malaria.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village c with malaria on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 2 was reported to have acute gastroenteritis.",
+    "count": 6
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 3, was reported positive for dengue on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village b was reported with malaria.",
+    "count": 6
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 5, was reported positive for dengue on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village c with dengue on <DATE>.",
+    "count": 6
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village c, street 7, on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 2 was reported to have malaria.",
+    "count": 5
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village b, street 1, on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village a with malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 8, village b with chikungunya on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village c with malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village c, street 2, on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village b with chikungunya on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 2, was reported positive for malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 8 was reported to have dengue.",
+    "count": 5
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village c, street 7, on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village b was reported with dengue.",
+    "count": 5
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 3, was reported positive for malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 8, village b with malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 5 was reported to have malaria.",
+    "count": 5
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 9, village b with dengue on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 1 was reported to have malaria.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 1 was reported to have chikungunya.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village b was reported with malaria.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 10 was reported to have malaria.",
+    "count": 5
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village a with malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village b was reported with chikungunya.",
+    "count": 5
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village b with dengue on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 5, was reported positive for malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 7, was reported positive for malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 6 was reported to have malaria.",
+    "count": 5
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village b, street 7, on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 1, was reported positive for chikungunya on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village a, street 4, on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village a with malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 9, was reported positive for dengue on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 5 was reported to have malaria.",
+    "count": 5
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 7, was reported positive for malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village c was reported with malaria.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 7 was reported to have chikungunya.",
+    "count": 5
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village a, street 3, on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village b with malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 4 was reported to have malaria.",
+    "count": 5
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 5, was reported positive for malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village b with malaria on <DATE>.",
+    "count": 5
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 4 was reported to have chikungunya.",
+    "count": 4
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village c, street 5, on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village b, street 1, on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village b, street 6, on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village c, street 9, on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village b, street 4, on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 7 was reported to have dengue.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 4 was reported to have malaria.",
+    "count": 4
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village b, street 3, on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 2, was reported positive for malaria on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village b, street 3, on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village c was reported with acute gastroenteritis.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 6, was reported positive for chikungunya on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 8, was reported positive for dengue on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 1 was reported to have chikungunya.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 2, was reported positive for dengue on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 3, was reported positive for malaria on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 7 was reported to have malaria.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 1, was reported positive for malaria on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village b, street 2, on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village b with chikungunya on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 1, was reported positive for malaria on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village b was reported with chikungunya.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 9 was reported to have chikungunya.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village c was reported with dengue.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 6, was reported positive for dengue on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village c, street 4, on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village a, street 1, on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 2 was reported to have malaria.",
+    "count": 4
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village a with chikungunya on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village c was reported with malaria.",
+    "count": 4
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village a with dengue on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village a was reported with chikungunya.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 3 in village c was reported with chikungunya.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 9, was reported positive for dengue on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 8, was reported positive for malaria on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village c was reported with chikungunya.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 9, was reported positive for malaria on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 6 was reported to have chikungunya.",
+    "count": 4
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 3, was reported positive for chikungunya on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village c, street 5, on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 6 was reported to have chikungunya.",
+    "count": 4
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village c with malaria on <DATE>.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village c was reported with malaria.",
+    "count": 4
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village b was reported with chikungunya.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 10 in village c was reported with chikungunya.",
+    "count": 3
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village b, street 2, on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village b, street 4, on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village a was reported with malaria.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village c was reported with chikungunya.",
+    "count": 3
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village c, street 8, on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village a, street 7, on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village a with malaria on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village c with chikungunya on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 10, was reported positive for malaria on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village c was reported with malaria.",
+    "count": 3
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village a with chikungunya on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 4, was reported positive for chikungunya on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village b with malaria on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village a, street 4, on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 5 was reported to have malaria.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 3 was reported to have chikungunya.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 6 was reported to have malaria.",
+    "count": 3
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 6, was reported positive for malaria on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village b, street 9, on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village c, street 1, on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 6 was reported to have malaria.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village c was reported with malaria.",
+    "count": 3
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village c, street 9, on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village c, street 8, on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 3 was reported to have chikungunya.",
+    "count": 3
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 4, village a with chikungunya on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 2, was reported positive for chikungunya on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village b was reported with malaria.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 1 in village b was reported with chikungunya.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 6 was reported to have chikungunya.",
+    "count": 3
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village c with chikungunya on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 4, was reported positive for chikungunya on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village b was reported with dengue.",
+    "count": 3
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village b, street 6, on <DATE>.",
+    "count": 3
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 2 was reported to have chikungunya.",
+    "count": 3
+  },
+  {
+    "template": "a dengue infection was reported for <PERSON> from village b, street 9, on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village a, street 5, on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village c was reported with dengue.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 2, was reported positive for chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 3, was reported positive for malaria on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 6, was reported positive for malaria on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 5, was reported positive for malaria on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 3, was reported positive for chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village b was reported with dengue.",
+    "count": 2
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village c with chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 9, was reported positive for chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 2 in village b was reported with chikungunya.",
+    "count": 2
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village c, street 6, on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village c was reported with chikungunya.",
+    "count": 2
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village b, street 7, on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 9, village c with dengue on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 10, village c with chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village c, street 6, on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village a with chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village c was reported with malaria.",
+    "count": 2
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village c with chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village b was reported with chikungunya.",
+    "count": 2
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 9, village c with malaria on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village c was reported with chikungunya.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 1, was reported positive for chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 6, was reported positive for acute gastroenteritis on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village b, street 2, on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 10, was reported positive for chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 3 was reported to have chikungunya.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 4 was reported to have malaria.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 1 was reported to have chikungunya.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 8, was reported positive for chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 9 was reported to have malaria.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 5 in village a was reported with chikungunya.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 6 in village c was reported with dengue.",
+    "count": 2
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village b, street 8, on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 10 in village c was reported with malaria.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 8, was reported positive for chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village c, street 3, on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 5, was reported positive for chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village c, street 2, on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village c with chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 7 was reported to have chikungunya.",
+    "count": 2
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village a with chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 7, was reported positive for chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 7, was reported positive for chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village a, street 5, on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 5, village b with chikungunya on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village b was reported with chikungunya.",
+    "count": 2
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 5, was reported positive for dengue on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village c, street 9, on <DATE>.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village a was reported with chikungunya.",
+    "count": 2
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 3 was reported to have malaria.",
+    "count": 1
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village b with chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village c, street 10, on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 8 was reported to have chikungunya.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 10 was reported to have chikungunya.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 2 was reported to have chikungunya.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 2 was reported to have malaria.",
+    "count": 1
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 8, village c with chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 5 was reported to have chikungunya.",
+    "count": 1
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village b, street 9, on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 9, village c with chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village a with chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 7 in village a was reported with malaria.",
+    "count": 1
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 7, village b with dengue on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 7, was reported positive for chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village c, street 4, on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 6, village b with chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 5, was reported positive for chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village c was reported with chikungunya.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 9 in village c was reported with chikungunya.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 8 in village b was reported with dengue.",
+    "count": 1
+  },
+  {
+    "template": "<PERSON>, a resident of village c, street 4, was reported positive for chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village a, street 5 was reported to have chikungunya.",
+    "count": 1
+  },
+  {
+    "template": "a chikungunya infection was reported for <PERSON> from village b, street 5, on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "<PERSON>, a resident of village b, street 6, was reported positive for chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "<PERSON>, a resident of village a, street 2, was reported positive for chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 8 was reported to have chikungunya.",
+    "count": 1
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 2, village b with chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> from street 4 in village b was reported with chikungunya.",
+    "count": 1
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 1, village b with chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 3, village c with chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "a malaria infection was reported for <PERSON> from village b, street 5, on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 4 was reported to have chikungunya.",
+    "count": 1
+  },
+  {
+    "template": "the health worker recorded <PERSON> from street 9, village b with chikungunya on <DATE>.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village b, street 7 was reported to have chikungunya.",
+    "count": 1
+  },
+  {
+    "template": "on <DATE>, <PERSON> of village c, street 4 was reported to have chikungunya.",
+    "count": 1
+  }
+]

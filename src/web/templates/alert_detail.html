@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Alert {{ alert.alert_id }} — EpiAlert{% endblock %}
+{% block body %}
+<h1>Alert {{ alert.alert_id }}</h1>
+<p class="sub"><a class="link" href="/alerts">&larr; All alerts</a></p>
+
+<div class="panel">
+  <h2>Message sent to residents</h2>
+  <p>{{ alert.message }}</p>
+</div>
+
+<div class="panel">
+  <h2>Detail</h2>
+  <div class="scroll">
+  <table>
+    <tbody>
+      <tr><th>Disease</th><td>{{ alert.disease }}</td></tr>
+      <tr><th>Location</th><td>{{ alert.village }} &middot; {{ alert.street }}</td></tr>
+      <tr><th>Week</th><td>{{ alert.week_number }}</td></tr>
+      <tr><th>Status</th><td><span class="tag {{ alert.status }}">{{ alert.status }}</span></td></tr>
+      <tr><th>Severity</th><td>{{ alert.severity }}</td></tr>
+      <tr><th>Observed</th><td>{{ alert.observed_count }}</td></tr>
+      <tr><th>Expected</th><td>{{ "%.3f"|format(alert.expected_count or 0) }}</td></tr>
+      <tr><th>CUSUM signal</th><td>{{ 'yes' if alert.cusum_signal else 'no' }}</td></tr>
+      <tr><th>EWMA signal</th><td>{{ 'yes' if alert.ewma_signal else 'no' }}</td></tr>
+      <tr><th>Fusion mode</th><td>{{ alert.fusion_mode }}</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+{% if alert.explanation %}
+<div class="panel">
+  <h2>Detector diagnostics</h2>
+  <p class="muted"><code>{{ alert.explanation }}</code></p>
+</div>
+{% endif %}
+
+<div class="panel">
+  <h2>SMS dispatched ({{ alert.sms|length }})</h2>
+  {% if alert.sms %}
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Phone</th><th>Status</th><th>Provider</th><th>Sent at</th></tr></thead>
+    <tbody>
+      {% for s in alert.sms %}
+      <tr>
+        <td>{{ s.phone_number }}</td>
+        <td class="{{ s.delivery_status }}">{{ s.delivery_status }}</td>
+        <td>{{ s.provider }}</td>
+        <td>{{ s.sent_at }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <p class="empty">No SMS dispatched for this alert.</p>
+  {% endif %}
+</div>
+{% endblock %}

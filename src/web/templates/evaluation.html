@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}Evaluation — EpiAlert{% endblock %}
+{% block body %}
+<h1>Evaluation</h1>
+<p class="sub">Measured against ground truth. Values come from results/ on disk; anything not computed is shown as such.</p>
+
+{% for mode in ['union', 'confirmation'] %}
+{% set report = comparison[mode] %}
+<div class="panel">
+  <h2>{{ mode }} mode</h2>
+  {% if report and report.metrics %}
+  <p class="muted" style="font-size:13px;">
+    {{ "{:,}".format(report.total_evaluation_unit_weeks) }} unit-weeks evaluated &middot;
+    {{ report.total_outbreak_unit_weeks }} true outbreak unit-weeks
+    ({{ "%.2f"|format(100 * report.total_outbreak_unit_weeks / report.total_evaluation_unit_weeks) }}%) &middot;
+    {{ report.outbreaks|length }} outbreaks
+  </p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Detector</th><th>TP</th><th>FP</th><th>FN</th><th>TN</th>
+      <th>Sensitivity</th><th>Specificity</th><th>PPV</th><th>F1</th></tr></thead>
+    <tbody>
+      {% for name, d in report.metrics.items() %}
+      <tr>
+        <td>{{ name.replace('_', ' ')|title }}</td>
+        <td>{{ d.TP }}</td><td>{{ d.FP }}</td><td>{{ d.FN }}</td><td>{{ d.TN }}</td>
+        <td>{{ "%.3f"|format(d.sensitivity) }}</td>
+        <td>{{ "%.3f"|format(d.specificity) }}</td>
+        <td>{{ "%.3f"|format(d.PPV) }}</td>
+        <td>{{ "%.3f"|format(d.F1) }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p class="muted" style="font-size:13px;margin-top:12px;">
+    Over-escalation: {{ "{:,}".format(report.over_escalation) }} false alarms &middot;
+    Under-escalation: {{ report.under_escalation }} missed outbreak unit-weeks
+  </p>
+  {% else %}
+  <p class="empty">NOT_COMPUTED — results/spatial_evaluation_{{ mode }}.json is missing.
+     Run the spatial evaluation to produce it.</p>
+  {% endif %}
+</div>
+{% endfor %}
+
+{% set conf = comparison['confirmation'] %}
+{% if conf and conf.timeliness %}
+<div class="panel">
+  <h2>Timeliness (confirmation mode)</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Event</th><th>Disease</th><th>Village</th>
+      <th>True start</th><th>First detected</th><th>Lead time</th></tr></thead>
+    <tbody>
+      {% for t in conf.timeliness %}
+      <tr>
+        <td>{{ t.event_id or t.event }}</td>
+        <td>{{ t.disease }}</td>
+        <td>{{ t.village }}</td>
+        <td>{{ t.true_start if t.true_start is defined else t.start_week }}</td>
+        <td>{{ t.first_detected if t.first_detected is defined else '—' }}</td>
+        <td>{{ t.lead_time if t.lead_time is defined else '—' }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</div>
+{% endif %}
+
+<div class="note">
+  Precision is low in both modes at this spatial granularity: street-level weekly
+  counts are small (0&ndash;4), so ordinary variation is hard to separate from a
+  genuine rise. The confirmation rule cuts false alarms substantially, but neither
+  mode reaches a precision that would be usable in the field without further work.
+</div>
+{% endblock %}
