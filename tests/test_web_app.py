@@ -223,3 +223,43 @@ def test_alert_detail_renders(auth_client: TestClient):
 
 def test_unknown_alert_returns_404(auth_client: TestClient):
     assert auth_client.get("/alerts/99999999").status_code == 404
+
+
+# ---------------------------------------------------------------------------
+# Filter forms
+# ---------------------------------------------------------------------------
+
+# Pressing Apply with an empty box submits "week=" rather than omitting it.
+# FastAPI cannot parse "" as an int, so this used to return a 422 error page
+# for the most ordinary action on the page. An empty box means "no filter".
+BLANK_FILTER_REQUESTS = [
+    "/results?week=",
+    "/results?disease=&village=&street=&week=&status_filter=&fusion_mode=confirmation",
+    "/alerts?status_filter=",
+]
+
+# Nothing a user can type into a filter should produce an error page.
+HOSTILE_FILTER_REQUESTS = [
+    "/results?week=abc",
+    "/results?week=-5",
+    "/results?week=999999999999",
+    "/results?fusion_mode=nonsense",
+    "/results?disease=' OR 1=1--",
+    "/results?village=<script>alert(1)</script>",
+]
+
+
+@pytest.mark.parametrize("path", BLANK_FILTER_REQUESTS)
+def test_blank_filters_show_everything(auth_client: TestClient, path: str):
+    """Submitting the filter form with empty boxes must work."""
+    resp = auth_client.get(path)
+    assert resp.status_code == 200, (
+        f"{path} returned {resp.status_code}; an empty filter box is not an error"
+    )
+
+
+@pytest.mark.parametrize("path", HOSTILE_FILTER_REQUESTS)
+def test_bad_filter_values_do_not_error(auth_client: TestClient, path: str):
+    """Unparseable or hostile filter values are ignored, not fatal."""
+    resp = auth_client.get(path)
+    assert resp.status_code == 200, f"{path} returned {resp.status_code}"

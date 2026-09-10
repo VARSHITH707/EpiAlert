@@ -31,9 +31,24 @@
     </tbody>
   </table>
   </div>
+  {% if result.alerts is defined %}
+  <h2>Alerts and notification</h2>
+  <div class="cards">
+    <div class="card"><div class="n">{{ result.alerts }}</div><div class="k">Alerts raised</div></div>
+    <div class="card"><div class="n">{{ result.sms }}</div><div class="k">SMS sent (mock)</div></div>
+  </div>
+  {% if result.alert_error %}
+  <div class="note">
+    Reports and detection were stored, but the alert stage failed:
+    <code>{{ result.alert_error }}</code>
+  </div>
+  {% endif %}
+  {% endif %}
+
   <p style="margin-top:14px;">
     <a class="link" href="/results?week={{ result.week }}">View these results</a> &middot;
-    <a class="link" href="/alerts">View alerts</a>
+    <a class="link" href="/alerts">View alerts</a> &middot;
+    <a class="link" href="/sms">View SMS audit</a>
   </p>
   {% elif result.detection_error %}
   <div class="note">

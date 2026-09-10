@@ -200,7 +200,61 @@ def process_uploaded_week(week_num: int, content: bytes) -> dict:
     }
 
     summary["detection"], summary["detection_error"] = _run_detection(week_num)
+
+    # Carry the chain through to alerts and SMS. Stopping at detection left the
+    # web user with results but no alerts, and no way to produce them without
+    # dropping to a terminal -- which defeats the point of the upload page.
+    summary["alerts"], summary["sms"], summary["alert_error"] = _run_alerts_and_sms(
+        week_num
+    )
     return summary
+
+
+def _run_alerts_and_sms(week_num: int) -> tuple:
+    """Generate alerts for this week and dispatch them in mock mode.
+
+    Returns (alert_count, sms_count, error). A failure here must not discard
+    the upload: the reports and detection results are already stored, so the
+    error is reported and the rest of the run still counts.
+
+    Ollama is skipped. A web request should not wait seconds per alert for a
+    language model; the deterministic message template says the same thing.
+    """
+    try:
+        from src.alerts.service import AlertService, SMSDispatchService
+        from src.sms import MockSMSProvider
+
+        service = AlertService()
+        service.generate_alerts(fusion_mode="confirmation", use_ollama=False)
+
+        conn = get_connection()
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT alert_id FROM alerts
+               WHERE week_number = ? AND sms_eligible = 1""",
+            (week_num,),
+        )
+        alert_ids = [r[0] for r in cur.fetchall()]
+        cur.close()
+        conn.close()
+
+        dispatcher = SMSDispatchService(service, provider=MockSMSProvider())
+        sent = 0
+        for alert_id in alert_ids:
+            alert = service.get_alert(alert_id)
+            if alert:
+                results = dispatcher.dispatch_alert(alert)
+                sent += sum(1 for r in results
+                            if r["delivery_status"] == "sent")
+
+        logger.info(
+            "Week %s: %d alerts, %d messages dispatched",
+            week_num, len(alert_ids), sent,
+        )
+        return len(alert_ids), sent, None
+    except Exception as exc:  # noqa: BLE001 - surfaced, never swallowed
+        logger.warning("Alert/SMS stage failed for week %s: %s", week_num, exc)
+        return 0, 0, str(exc)
 
 
 def _run_detection(week_num: int) -> tuple[Optional[dict], Optional[str]]:

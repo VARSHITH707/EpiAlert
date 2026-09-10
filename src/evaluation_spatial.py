@@ -23,6 +23,9 @@ from src.ingestion import week_number_to_date, load_people_map
 from collections import defaultdict
 import json
 
+# How many weeks of history the baseline looks back over.
+BASELINE_WINDOW = 20
+
 # ---------------------------------------------------------------------------
 # Spatial unit enumeration
 # ---------------------------------------------------------------------------
@@ -79,45 +82,185 @@ def get_weekly_count(week_num: int, disease: str, village: str, street: str) -> 
     return count
 
 
+def _unit_population(village: str, street: str) -> int:
+    """People living on one street. Computed once per process."""
+    global _POPULATION
+    if _POPULATION is None:
+        _POPULATION = defaultdict(int)
+        for _pid, (v, st) in load_people_map().items():
+            _POPULATION[(v, st)] += 1
+    return _POPULATION.get((village, street), 0)
+
+
+_POPULATION = None
+
+
+class WeeklyCounts:
+    """All weekly case counts, loaded once and held in memory.
+
+    Detection previously asked the database for one cell at a time --
+    `get_weekly_count` and `get_spatial_baseline` each opened a fresh
+    connection per street per week per disease, roughly 65,000 connections for
+    a full run, at about 65 rows/second. The whole table of counts is a few
+    thousand rows, so one query up front replaces all of them.
+
+    Load once per evaluation run rather than caching module-wide: an upload can
+    add a week mid-process, and a cache that outlives the run would serve stale
+    counts for it.
+    """
+
+    def __init__(self):
+        self._counts: dict = {}
+        self._loaded = False
+
+    def load(self, first_week: int = None, last_week: int = None) -> int:
+        """Read counts for a week range. Returns the number of cells loaded.
+
+        The range matters. Scanning the whole reports table is worth it for an
+        84-week run and wasteful for a one-week one -- loading everything made
+        the test suite roughly twice as slow, because most tests evaluate a
+        single week. Bounding the query keeps the fixed cost proportional to
+        the run.
+        """
+        conn = get_connection()
+        cur = conn.cursor()
+        if first_week is not None and last_week is not None:
+            cur.execute(
+                """SELECT week_number, infection, village, street, COUNT(*)
+                   FROM reports
+                   WHERE infection != 'No infection'
+                     AND week_number BETWEEN ? AND ?
+                   GROUP BY week_number, infection, village, street""",
+                (first_week, last_week),
+            )
+        else:
+            cur.execute(
+                """SELECT week_number, infection, village, street, COUNT(*)
+                   FROM reports
+                   WHERE infection != 'No infection'
+                   GROUP BY week_number, infection, village, street"""
+            )
+        self._counts = {
+            (week, disease, village, street): count
+            for week, disease, village, street, count in cur.fetchall()
+        }
+        cur.close()
+        conn.close()
+        self._loaded = True
+        return len(self._counts)
+
+    def get(self, week_num: int, disease: str, village: str, street: str) -> int:
+        """Count for one cell. Absent means zero cases, not missing data."""
+        if not self._loaded:
+            self.load()
+        return self._counts.get((week_num, disease, village, street), 0)
+
+
+def _counts_for_weeks(weeks: list, disease: str, village: str, street: str,
+                      counts_cache: "WeeklyCounts" = None) -> list:
+    """Case counts for one unit across the given weeks, as (week, count).
+
+    Uses the in-memory cache when one is supplied. The query fallback exists so
+    callers and tests that pass no cache keep working unchanged.
+    """
+    if counts_cache is not None:
+        return [(w, counts_cache.get(w, disease, village, street)) for w in weeks]
+
+    counts = []
+    conn = get_connection()
+    cur = conn.cursor()
+    for week in weeks:
+        cur.execute(
+            """SELECT COUNT(*) FROM reports
+               WHERE week_number = ? AND infection = ? AND village = ? AND street = ?""",
+            (week, disease, village, street),
+        )
+        counts.append((week, cur.fetchone()[0]))
+    cur.close()
+    conn.close()
+    return counts
+
+
+def _eligible_weeks(week_num: int, candidates: list, alert_weeks: set,
+                    guard_band: int) -> tuple[list, int]:
+    """Weeks that may contribute to the baseline, and how many were dropped.
+
+    Two exclusions, in order:
+
+    - the guard band, the weeks closest to the decision week, because an
+      outbreak contaminates the most recent weeks first and a window running up
+      to the decision absorbs the start of the rise into what counts as normal
+    - weeks already flagged as alerting, which are not evidence of normal
+
+    An excluded week leaves the list entirely, so it is dropped from both the
+    sum and the count that divides it.
+    """
+    requested = list(candidates)
+    kept = [w for w in requested if w < week_num - guard_band] if guard_band > 0 \
+        else list(requested)
+    kept = [w for w in kept if w not in alert_weeks]
+    return kept, len(requested) - len(kept)
+
+
 def get_spatial_baseline(week_num: int, disease: str, village: str, street: str,
-                         baseline_weeks: list) -> dict:
+                         baseline_weeks: list,
+                         alert_weeks: set = None,
+                         guard_band: int = 0,
+                         min_baseline: int = 0,
+                         counts_cache: "WeeklyCounts" = None) -> dict:
     """Compute baseline (mu, sigma) for a spatial unit from historical weeks.
+
+    Parameters
+    ----------
+    baseline_weeks : list
+        Candidate weeks, all strictly before week_num.
+    alert_weeks : set, optional
+        Weeks already confirmed as alerting for this unit. They are dropped
+        from the window entirely -- from the sum AND from the count that
+        divides it. Without this, a sustained outbreak raises its own baseline
+        week by week until it no longer looks unusual, so the outbreak hides
+        itself exactly when detection matters most.
+    guard_band : int
+        Weeks immediately before week_num to skip. An outbreak beginning to
+        rise contaminates the most recent weeks first; excluding them stops an
+        emerging signal being absorbed into what counts as normal.
 
     Returns dict with:
     - mu: expected rate (cases / population)
     - sigma: standard deviation of rate
-    - Bt_size: number of historical weeks used
-    - weekly_counts: list of (week_num, count) for the baseline window
+    - Bt_size: number of eligible weeks actually used
+    - Bt_excluded: how many were dropped as alerting or guard-band
+    - weekly_counts: list of (week_num, count) for the eligible weeks
     """
-    counts = []
-    conn = get_connection()
-    cur = conn.cursor()
+    baseline_weeks, excluded = _eligible_weeks(
+        week_num, baseline_weeks, alert_weeks or set(), guard_band
+    )
 
-    for bw in baseline_weeks:
-        cur.execute(
-            """SELECT COUNT(*) FROM reports
-               WHERE week_number = ? AND infection = ? AND village = ? AND street = ?""",
-            (bw, disease, village, street),
-        )
-        count = cur.fetchone()[0]
-        counts.append((bw, count))
+    # Minimum baseline. Excluding alert weeks shrinks the window, and a window
+    # that has shrunk too far produces an unreliable mean that is easy to
+    # exceed -- which triggers another alert, which excludes another week. That
+    # feedback runs away. Below the floor, report insufficient rather than
+    # evaluating on evidence too thin to support a decision.
+    if min_baseline and len(baseline_weeks) < min_baseline:
+        return {"mu": 0.0, "sigma": 0.0, "Bt_size": len(baseline_weeks),
+                "Bt_excluded": excluded, "weekly_counts": [],
+                "insufficient": True}
 
-    cur.close()
-    conn.close()
+    counts = _counts_for_weeks(
+        baseline_weeks, disease, village, street, counts_cache
+    )
 
     if not counts:
-        return {"mu": 0.0, "sigma": 0.0, "Bt_size": 0, "weekly_counts": []}
+        return {"mu": 0.0, "sigma": 0.0, "Bt_size": 0,
+                "Bt_excluded": excluded, "weekly_counts": []}
 
-    # Compute rate per week
-    # Use the population of this spatial unit
-    people_map = load_people_map()
-    population = 0
-    for pid, (v, s) in people_map.items():
-        if v == village and s == street:
-            population += 1
+    # Population of this unit. load_people_map is cached upstream, but walking
+    # 3,000 people per cell still costs more than the query it replaced.
+    population = _unit_population(village, street)
 
     if population == 0:
-        return {"mu": 0.0, "sigma": 0.0, "Bt_size": 0, "weekly_counts": []}
+        return {"mu": 0.0, "sigma": 0.0, "Bt_size": 0,
+                "Bt_excluded": excluded, "weekly_counts": []}
 
     rates = [c / population for _, c in counts]
     mu = sum(rates) / len(rates)
@@ -132,6 +275,7 @@ def get_spatial_baseline(week_num: int, disease: str, village: str, street: str,
         "mu": mu,
         "sigma": sigma,
         "Bt_size": len(counts),
+        "Bt_excluded": excluded,
         "weekly_counts": counts,
     }
 
@@ -158,6 +302,31 @@ class SpatialCUSUMState:
     def set_S(self, disease: str, village: str, street: str, S_t: float):
         """Set current CUSUM statistic for a spatial unit."""
         self._state[(disease, village, street)] = S_t
+
+    def reset(self):
+        """Clear all state."""
+        self._state.clear()
+
+
+class SpatialAlertHistory:
+    """Remembers which weeks each spatial unit has already alerted on.
+
+    Feeds the adaptive baseline, which must exclude those weeks. Only weeks
+    already processed are ever recorded, so consulting this cannot leak
+    information from the future into a decision.
+    """
+
+    def __init__(self):
+        # Key: (disease, village, street) -> set of alerting week numbers
+        self._state = {}
+
+    def get_alert_weeks(self, disease: str, village: str, street: str) -> set:
+        """Weeks this unit has alerted on so far."""
+        return self._state.get((disease, village, street), set())
+
+    def mark_alert(self, disease: str, village: str, street: str, week: int):
+        """Record a confirmed alert week."""
+        self._state.setdefault((disease, village, street), set()).add(week)
 
     def reset(self):
         """Clear all state."""
@@ -204,6 +373,16 @@ def run_spatial_evaluation(
     ewma_l: float = None,
     persist: bool = True,
     fusion_mode: str = None,
+    # Guard band 2 is the production default. Measured against the plain
+    # window on all five diseases: recall 0.262 -> 0.317, burden 2.9% -> 3.8%,
+    # inside the 5% ceiling, no event lost. See DECISIONS.md.
+    baseline_guard_band: int = 2,
+    # Excluding alert weeks is OFF. It was implemented and measured, and it
+    # makes the system worse: without a floor it runs away to 13.3% burden,
+    # and with a floor recall falls below the plain window. Kept reachable so
+    # the comparison in DECISIONS.md can be reproduced.
+    baseline_exclude_alerts: bool = False,
+    baseline_min: int = 0,
 ) -> dict:
     """Run all four detectors per spatial unit per week.
 
@@ -252,14 +431,11 @@ def run_spatial_evaluation(
     if fusion_mode is None:
         fusion_mode = det_config.COMBINED_FUSION_MODE
 
-    # Set fusion mode in config for the CombinedDetector to read
-    # (We do this by setting an env var that the config reads)
-    import os
-    os.environ["COMBINED_FUSION_MODE"] = fusion_mode
-    # Re-import to pick up the change
-    import importlib
-    import src.detection.config as cfg_mod
-    importlib.reload(cfg_mod)
+    # The fusion mode is passed to each detect() call rather than pushed into
+    # an environment variable and reloaded. Mutating process-wide state to
+    # carry a per-call argument meant one evaluation silently changed the mode
+    # of every later evaluation in the same process, so results depended on
+    # the order calls happened to run in.
     from src.detection import config as det_config2
     # Update our local refs
     cusum_h = det_config2.CUSUM_H
@@ -288,6 +464,14 @@ def run_spatial_evaluation(
                 cusum_k=cusum_k,
                 ewma_alpha=ewma_alpha,
                 ewma_l=ewma_l,
+                baseline_guard_band=baseline_guard_band,
+                baseline_exclude_alerts=baseline_exclude_alerts,
+                baseline_min=baseline_min,
+                # Must be forwarded. Omitting it made every all-diseases run
+                # fall back to the config default (union) no matter what the
+                # caller asked for, so a confirmation-mode request silently
+                # produced union-mode results.
+                fusion_mode=fusion_mode,
                 persist=persist,
             )
             all_results["spatial_units"].extend(disease_result["spatial_units"])
@@ -311,6 +495,13 @@ def run_spatial_evaluation(
     spatial_units = get_spatial_units(disease=disease)
     cusum_state = SpatialCUSUMState()
     ewma_state = SpatialEWMAState()
+    alert_history = SpatialAlertHistory()
+
+    # One query up front instead of tens of thousands of one-cell lookups.
+    counts_cache = WeeklyCounts()
+    # Reach back far enough to cover the baseline window and guard band of the
+    # earliest week evaluated.
+    counts_cache.load(max(1, start_week - BASELINE_WINDOW - 5), end_week)
 
     results = {
         "disease": disease,
@@ -323,6 +514,7 @@ def run_spatial_evaluation(
             "WATCH": 0,
             "ALERT": 0,
             "HIGH_ALERT": 0,
+            "INSUFFICIENT_BASELINE": 0,
         },
     }
 
@@ -333,18 +525,35 @@ def run_spatial_evaluation(
 
     for week_num in range(start_week, end_week + 1):
         week_results = []
-        baseline_weeks = list(range(max(1, week_num - 20), week_num))
+        baseline_weeks = list(range(max(1, week_num - BASELINE_WINDOW), week_num))
 
         for village, street, population in spatial_units:
             # --- Baseline ---
+            # Adaptive baseline: drop weeks this unit already alerted on, and
+            # the guard-band weeks immediately before now. Both exclusions
+            # remove a week from the average AND from the count dividing it.
             baseline = get_spatial_baseline(
-                week_num, disease, village, street, baseline_weeks
+                week_num, disease, village, street, baseline_weeks,
+                alert_weeks=(
+                    alert_history.get_alert_weeks(disease, village, street)
+                    if baseline_exclude_alerts else None
+                ),
+                guard_band=baseline_guard_band,
+                min_baseline=baseline_min,
+                counts_cache=counts_cache,
             )
             mu = baseline["mu"]
             sigma = baseline["sigma"]
 
+            # An insufficient baseline means we do not know what normal looks
+            # like here. Falling through would evaluate against mu = 0, which
+            # makes a single case look infinitely unusual and guarantees an
+            # alert -- worse than silently assuming in-control. Report the
+            # state and decide nothing.
+            insufficient_baseline = baseline.get("insufficient", False)
+
             # --- Current week count ---
-            observed_count = get_weekly_count(week_num, disease, village, street)
+            observed_count = counts_cache.get(week_num, disease, village, street)
             observed_rate = observed_count / population if population > 0 else 0.0
 
             # --- CUSUM (using per-spatial-unit data, not whole-population) ---
@@ -395,7 +604,7 @@ def run_spatial_evaluation(
             # Get recent weekly counts for this spatial unit
             recent_counts = []
             for bw in range(week_num - 3, week_num + 1):
-                c = get_weekly_count(bw, disease, village, street)
+                c = counts_cache.get(bw, disease, village, street)
                 recent_counts.append(c)
             # Pad if not enough history
             while len(recent_counts) < 4:
@@ -426,7 +635,9 @@ def run_spatial_evaluation(
                 weekly_counts=recent_counts,
                 cusum_k=cusum_k,
                 ewma_lambda=ewma_alpha,
-                ewma_l=ewma_l,            )
+                ewma_l=ewma_l,
+                fusion_mode=fusion_mode,
+            )
 
             row = {
                 "week_number": week_num,
@@ -447,6 +658,22 @@ def run_spatial_evaluation(
                     "ewma_status": "ALERT" if ewma_signal else "NORMAL",
                     "baseline_status": "ALERT" if (sigma > 0 and abs(baseline_deviation_sigma) >= 1.5) else "NORMAL",
                 }
+            if insufficient_baseline:
+                row["status"] = "INSUFFICIENT_BASELINE"
+                row["severity"] = "none"
+                row["cusum_signal"] = 0
+                row["ewma_signal"] = 0
+                row["explanation"] = (
+                    f"Baseline has only {baseline['Bt_size']} eligible weeks "
+                    f"after exclusions; too few to judge. No decision made."
+                )
+
+            # Feed the decision back. A confirmed alert makes this week
+            # ineligible for every future baseline on this unit -- the
+            # mechanism that stops a sustained outbreak normalising itself.
+            if combined_result["status"] in ("ALERT", "HIGH_ALERT"):
+                alert_history.mark_alert(disease, village, street, week_num)
+
             week_results.append(row)
             results["summary"][row["status"]] += 1
 

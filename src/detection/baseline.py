@@ -121,14 +121,40 @@ def compute_adaptive_baseline(week_num: int, x_series: dict, a_series: dict) -> 
 def get_observed_rate_series(up_to_week: int) -> dict:
     """Return {week_num: infection_rate} for weeks 1..up_to_week.
 
-    Queries the database via get_weekly_aggregation.  Call once and reuse
-    across baseline / CUSUM / EWMA computations to avoid repeated DB hits.
+    One grouped query rather than one call to get_weekly_aggregation per week.
+    That function also builds a dict for every person in the week, which the
+    detectors never look at -- only dashboard and reporting use it. Over 104
+    weeks that was 312,000 discarded objects per call, and the call is made
+    once per evaluated week, so the cost was quadratic. It was the single
+    slowest thing in the test suite at 161 seconds.
+
+    The rate matches get_weekly_aggregation exactly: people whose infection is
+    anything other than "No infection", over all people reporting that week.
     """
-    series = {}
-    for w in range(1, up_to_week + 1):
-        agg = get_weekly_aggregation(w)
-        series[w] = agg["infection_rate"]
-    return series
+    from src.database.db import get_connection
+
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute(
+        """SELECT week_number,
+                  COUNT(*) AS total,
+                  SUM(CASE WHEN infection != 'No infection' THEN 1 ELSE 0 END)
+                      AS infected
+           FROM reports
+           WHERE week_number <= ?
+           GROUP BY week_number""",
+        (up_to_week,),
+    )
+    series = {
+        week: (infected / total if total else 0.0)
+        for week, total, infected in cur.fetchall()
+    }
+    cur.close()
+    conn.close()
+
+    # Weeks with no reports at all are absent from the query; report them as
+    # zero so callers see a continuous series rather than a gap.
+    return {w: series.get(w, 0.0) for w in range(1, up_to_week + 1)}
 
 
 # ---------------------------------------------------------------------------

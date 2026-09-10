@@ -54,6 +54,28 @@ def create_app() -> FastAPI:
     return app
 
 
+def _opt_int(value: Optional[str]) -> Optional[int]:
+    """Parse an optional number from a form field.
+
+    An empty filter box submits `week=` rather than omitting the parameter, and
+    FastAPI cannot parse "" as an int -- which meant pressing Apply without
+    typing a week returned a 422 error page instead of showing all weeks. An
+    empty or unparseable box means "no filter", not "bad request".
+    """
+    if value is None or not value.strip():
+        return None
+    try:
+        return int(value)
+    except ValueError:
+        logger.info("Ignoring unparseable numeric filter: %r", value)
+        return None
+
+
+def _opt_str(value: Optional[str]) -> Optional[str]:
+    """Empty select boxes submit "", which means no filter."""
+    return value.strip() if value and value.strip() else None
+
+
 def _wants_html(request: Request) -> bool:
     """True when this looks like a browser asking for a page.
 
@@ -162,23 +184,34 @@ def _register_page_routes(app: FastAPI) -> None:
     def results(
         request: Request,
         user: str = Depends(require_user),
+        # Every filter arrives as a string, because an empty form field
+        # submits "" rather than being omitted. Parsing happens below so a
+        # blank box means "show everything" instead of returning an error.
         disease: Optional[str] = None,
         village: Optional[str] = None,
         street: Optional[str] = None,
-        week: Optional[int] = None,
+        week: Optional[str] = None,
         status_filter: Optional[str] = None,
         fusion_mode: str = "confirmation",
     ):
+        disease = _opt_str(disease)
+        village = _opt_str(village)
+        street = _opt_str(street)
+        status_filter = _opt_str(status_filter)
+        week_num = _opt_int(week)
+        if fusion_mode not in ("confirmation", "union"):
+            fusion_mode = "confirmation"
+
         return _page(
             request, "results.html", user,
             rows=data.detection_results(
                 disease=disease, village=village, street=street,
-                week=week, status=status_filter, fusion_mode=fusion_mode,
+                week=week_num, status=status_filter, fusion_mode=fusion_mode,
             ),
             options=data.filter_options(),
             selected={
                 "disease": disease, "village": village, "street": street,
-                "week": week, "status": status_filter,
+                "week": week_num, "status": status_filter,
                 "fusion_mode": fusion_mode,
             },
         )
@@ -189,6 +222,7 @@ def _register_page_routes(app: FastAPI) -> None:
         user: str = Depends(require_user),
         status_filter: Optional[str] = None,
     ):
+        status_filter = _opt_str(status_filter)
         return _page(
             request, "alerts.html", user,
             rows=data.alerts(status=status_filter),

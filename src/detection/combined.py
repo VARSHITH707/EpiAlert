@@ -263,6 +263,7 @@ class CombinedDetector:
         weekly_counts: list = None,
         cusum_k: float = None,
         ewma_lambda: float = None,
+        fusion_mode: str = None,
         ewma_l: float = None,
     ) -> dict:
         """Run the combined detection rule for one week.
@@ -337,7 +338,11 @@ class CombinedDetector:
             baseline_deviation_sigma = (observed_rate - baseline_mu) / baseline_sigma
 
         # ---- Determine status ----
-        fusion_mode = _cfg.COMBINED_FUSION_MODE
+        # Passed in per call. Reading it from module state meant one
+        # evaluation could change the mode of every later evaluation in the
+        # same process, so results depended on call order.
+        if fusion_mode is None:
+            fusion_mode = _cfg.COMBINED_FUSION_MODE
 
         signal_count = _count_signals(cusum_sig, ewma_sig, trend_sig, baseline_sig)
 
